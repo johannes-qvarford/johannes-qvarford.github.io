@@ -3,7 +3,6 @@ My personal website.
 
 ### To Do
 
-- Write the main page.  
 - Write a post index.  
 - Create site map.  
 - Better 404 page.  
@@ -20,6 +19,7 @@ My personal website.
   - Write post about Independent Teams.  
   - Write post about Vision with Autonomy.  
   - Write post about Tech Stack.  
+  - Write post about Career Site.  
   - Write post about Accessibility.  
 
 ### In Progress
@@ -28,4 +28,5 @@ My personal website.
 ### Done ✓
 
 - Write a test post.  
+- Write the main page.  
 

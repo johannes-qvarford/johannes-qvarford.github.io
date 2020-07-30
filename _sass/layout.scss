@@ -54,7 +54,15 @@ footer {
   justify-content: space-around;
 }
 
-main { background: white }
+main {
+  background: white;
+  padding: 16px;
+}
+
+article {
+  max-width: 600px;
+  margin: auto;
+}
 
 .nocontent {
   display: none;
