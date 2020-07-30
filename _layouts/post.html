@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<article>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    {{ page.date | date_to_string }}
+    {% if page.original_date %}
+      (Originally published on my old site on {{ page.original_date | date_to_string }})
+    {% endif %}
+  </p>
 
-<div class="post">
   {{ content }}
-</div>
+</article>

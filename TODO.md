@@ -7,7 +7,6 @@ My personal website.
 - Better 404 page.  
 - Better README.md.  
 - Write posts  
-  - Write post about SMW hacking.  
   - Write post about Winter Dreams.  
   - Write post about Lunch Lady Simulator.  
   - Write post about Case Based Reasoning.  
@@ -31,4 +30,5 @@ My personal website.
 - Write a post index.  
 - Friendlier home page  
 - Add CSS Cache busting.  
+  - Write post about SMW hacking.  
 
