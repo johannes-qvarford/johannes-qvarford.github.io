@@ -3,7 +3,6 @@ My personal website.
 
 ### To Do
 
-- Write a post index.  
 - Create site map.  
 - Better 404 page.  
 - Better README.md.  
@@ -29,4 +28,5 @@ My personal website.
 
 - Write a test post.  
 - Write the main page.  
+- Write a post index.  
 
