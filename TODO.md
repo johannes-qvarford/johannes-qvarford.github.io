@@ -29,4 +29,5 @@ My personal website.
 - Write a test post.  
 - Write the main page.  
 - Write a post index.  
+- Friendlier home page  
 
