@@ -30,4 +30,5 @@ My personal website.
 - Write the main page.  
 - Write a post index.  
 - Friendlier home page  
+- Add CSS Cache busting.  
 
