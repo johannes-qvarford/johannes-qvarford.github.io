@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Winter Dreams
-date: 2020-07-31
-original_date: 2016-01-10
+date: 2016-01-10
 style: winter-dreams
 ---
 

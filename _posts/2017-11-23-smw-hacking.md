@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Super Mario World Hacking"
-date: 2020-07-30
-original_date: 2017-11-23
+date: 2017-11-23
 style: smw-hacking
 ---
 

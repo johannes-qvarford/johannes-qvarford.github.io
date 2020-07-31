@@ -6,6 +6,7 @@ My personal website.
 - Create site map.  
 - Better 404 page.  
 - Better README.md.  
+- Nav-bar next to content on wide screens  
 - Write posts  
   - Write post about Lunch Lady Simulator.  
   - Write post about Case Based Reasoning.  
@@ -31,4 +32,5 @@ My personal website.
 - Add CSS Cache busting.  
   - Write post about SMW hacking.  
   - Write post about Winter Dreams.  
+- Use the original date of old articles  
 
