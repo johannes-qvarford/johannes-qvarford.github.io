@@ -16,12 +16,12 @@ My personal website.
   - Write post about Legacy Code.  
   - Write post about Independent Teams.  
   - Write post about Vision with Autonomy.  
-  - Write post about Tech Stack.  
   - Write post about Career Site.  
   - Write post about Accessibility.  
 
 ### In Progress
 
+  - Write post about Tech Stack.  
 
 ### Done ✓
 
