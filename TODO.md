@@ -19,6 +19,11 @@ My personal website.
   - Write post about Tech Stack.  
   - Write post about Career Site.  
   - Write post about Accessibility.  
+- Write reviews  
+  - Write review for The Pragmatic Programmer  
+  - Write review for Domain-Driven Design  
+  - Write review for Working Effectively with Legacy Code  
+  - Write review for Extreme Programming Explained  
 
 ### In Progress
 
