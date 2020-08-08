@@ -110,7 +110,7 @@ React
 Fetch
 Redux Toolkit
 lodash, date-fns
-yarn, next.js
+yarn, gatsby.js
 jest, jest, _, jest, msw, testing-library/react
 eslint(AirBnB)
 stylelint(stylelint-config-standard, stylelint-config-rational-order)

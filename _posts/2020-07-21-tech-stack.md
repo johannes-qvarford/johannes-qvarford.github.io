@@ -19,13 +19,13 @@ stacks:
                 "Api Libraries": None
                 "Other Libraries": None
                 "Build Tools": None
+                "Conformance": None
             testing:
                 "Test Runner": None     
                 "Test Coverage": None
                 "Tests as Documentation": None
                 "Mocking": None
                 "Integration Testing": None
-                "Conformance": None
         frontend:
             implementation:
                 "Scripting Language": Javascript
@@ -51,6 +51,49 @@ stacks:
             "Continuous Integration Platform": Github
             "Documentation Platform": Github Pages
             "Deployment Platform": Github Pages
+    dynamic:
+        backend:
+            implementation:
+                "Language": Javascript
+                "Database": Postgres
+                "Framework Libraries": Express
+                "Database Libraries": node-postgres, node-pg-migrate
+                "Api Libraries": OpenApi Generator
+                "Other Libraries": None
+                "Build Tools": yarn
+                "Conformance": eslint
+            testing:
+                "Test Runner": jest     
+                "Test Coverage": jest
+                "Tests as Documentation": None
+                "Mocking": jest
+                "Integration Testing": supertest
+                
+        frontend:
+            implementation:
+                "Scripting Language": Javascript
+                "Styling Language": CSS
+                "Markup Language": JSX
+                "Framework Libraries": React
+                "Api Libraries": Fetch
+                "State Management Libraries": Redux Toolkit
+                "Other Libraries": lodash, date-fns
+                "Build Tools": yarn, gatsby.js
+            testing:
+                "Test Runner": jest
+                "Test Coverage": jest
+                "Tests as Documentation": None
+                "Mocking": jest
+                "Integration Testing": msw, testing-library/react
+                "Scripting Conformance": eslint
+                "Styling Conformance": stylelint
+        infrastructure:
+            "End2End Testing": Cypress
+            "Version Control System": Git
+            "Version Control Platform": Github
+            "Continuous Integration Platform": Github Actions
+            "Documentation Platform": Github Pages
+            "Deployment Platform": Azure (ARM Template)
 ---
 
 ## Introduction
@@ -201,6 +244,41 @@ Below I will present my preference for the kinds of applications presented in th
 </dl>
 
 ### Dynamic Website
+
+#### Backend
+
+<dl>
+{% for column in page.stacks.dynamic.backend.implementation %}
+    <dt>{{ column[0] }}</dt>
+    <dd>{{ column[1] }}</dd>
+{% endfor %}
+{% for column in page.stacks.dynamic.backend.testing %}
+    <dt>{{ column[0] }}</dt>
+    <dd>{{ column[1] }}</dd>
+{% endfor %}
+</dl>
+
+#### Frontend
+
+<dl>
+{% for column in page.stacks.dynamic.frontend.implementation %}
+    <dt>{{ column[0] }}</dt>
+    <dd>{{ column[1] }}</dd>
+{% endfor %}
+{% for column in page.stacks.dynamic.frontend.testing %}
+    <dt>{{ column[0] }}</dt>
+    <dd>{{ column[1] }}</dd>
+{% endfor %}
+</dl>
+
+#### Infrastructure
+
+<dl>
+{% for column in page.stacks.dynamic.infrastructure %}
+    <dt>{{ column[0] }}</dt>
+    <dd>{{ column[1] }}</dd>
+{% endfor %}
+</dl>
 
 ### Micro Service/Frontend
 
