@@ -239,6 +239,7 @@ A part of a greater application that fulfills some domain-specific purpose.
 Micro services and frontends are usually not alone, or at least not for long.
 It's important to be able to quickly create new ones, and avoid duplicating api contract details between client and server.
 
+
 ## Stacks
 
 Below I will present my preference for the kinds of applications presented in this article.
@@ -255,8 +256,91 @@ Below I will present my preference for the kinds of applications presented in th
 
 {% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.microService %}
 
-TODO: Explain commonalities and differences
+## Reasoning
 
-TODO: Summary
+### Static Website
 
-### 
+When it comes to building a simple website, there is almost no reason to use pure HTML/CSS/JS.
+
+You're at least going to want to reduce the repetition of the common head and body layout,
+at which point you might as well generate the website.
+Using a dynamic webserver to serve static content just complicates things and makes hosting more expensive.
+
+Jekyll is among the better static site generators for how predictable and extensible it is.
+
+It's also the static website generator of choice for GitHub Pages, which is a plus.
+
+### Dynamic Website
+
+If you need to support user accounts and forms, then Jekyll will not be enough.
+
+Ruby on Rails was considered for the backend, but it felt more simple to use the same language on the frontend and the backend. Sails.js was considered for how similar it is to Ruby on Rails, but it has not seen that much activity and doesn't have a big community. Also, some of the things that was attractive about Ruby on Rails is not present, such as opinionated integration testing.
+
+React was chosen as the underlying rendering framework because it feels more stable in its' niche.
+Angular competes more directly with Vue since they both primarily use a templating language instead of JSX.
+In my experience, it has been easier to integrate tool support for JSX rather than support for Vue's special .vue files.
+
+Jest was chosen for testing because it's opinionated when it comes to mocking.
+
+The chosen stack is modern and the frontend is opinionated. It's easy to get lost in a sea of choices and configuration in the Node ecosystem if you don't offload some of it.
+
+Gatsby.js was chosen over Next.js and Nuxt.js partially for its' greater accessibility features.
+Blitz.js was considered since it's a fullstack framework that reduces friction between frontend and backend.
+However, it's a very young framework that I don't think is ready for production use.
+
+
+### Micro Service/Frontend
+
+#### Why not Node?
+
+There are a number of for jumping of the fullstack Javascript bandwagon.
+
+First, I think the JVM ecosystem is better for backend development than Node.
+
+Most libraries have higher cohesion with trusted groups of maintainers rather than single line libraries with individual maintainers.
+
+There is less friction in build tools: Maven and Gradle are the only serious options and they have commonly followed conventions.
+
+There is less friction in testing tools: JUnit dominates.
+
+It's easy to switch between languages without losing access to a lot of the ecosystem.
+
+The JVM ecosystem has stood the test of time, and shortcomings are being addressed at a fast rate.
+It will soon be hard to argue that Java is outdated.
+
+A website can start of with the Dynamic Website stack when small, and once it reaches a certain complexity it can be divided into micro services one at a time until the original website is just a shell that can easily be replaced.
+
+#### Why everything else?
+
+Java is absorbing useful features from other languages at an increasing rate.
+Why bet on Kotlin instead of Java?
+Kotlin was chosen over Java because it's similar enough while providing enough development productivity gains to offset the potential rewrite to Java in the future.
+There are tools for converting between the two, tests prevent accidental regressions and small libraries / micro services / micro fragments prevent the need for a big rewrite.
+
+Quarkus was chosen over Spring Boot for the same reason. Spring Boot is currently not as easy to Google since there is a lot of old guides that don't use current best practices, which Spring Framework keeps backwards-compatibility for. It's also the case that Spring Boot uses runtime Dependency Injection and can't be statically compiled through GraalVM yet. This might change in the future, but for now, Quarkus shows no sign of slowing down.
+
+Gradle was preferred over Maven because of the speed of development and the ability to solve complicated build setups that are hard with Maven. Gradle requires a lot of care so that it doesn't become too hard to maintain though.
+
+Typescript was chosen over Javascript because it makes it easier for humans and tools to understand the design of the code. It requires more setup which isn't always necessary for a small app.
+
+### Version Control
+
+I liked Mercurial quite a lot a few years ago, but it has been losing too much market share to Git at this point.
+
+GitHub was chosen over GitLab because of developer familiarity rather than technical excellence.
+They are about on par when it comes to desired features though.
+
+GitLab is probably preferred if you need self-hosting.
+
+### Hosting
+
+If you need anything beyond static website hosting, then I prefer Azure over AWS and GCS.
+AWS felt very unintuitive to use. 
+GCS feels risky to rely on, given their track-record with abandoning services.
+
+Heroku gives off the impression that you might be stuck due to lack of flexibility in their offerings.
+
+Digital Ocean doesn't offer SaaS hosting.
+
+
+## TODO: Summary

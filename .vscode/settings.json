@@ -8,6 +8,7 @@
         "Struct",
         "detekt",
         "micros_ervice",
-        "stylelint"
+        "stylelint",
+        "templating"
     ]
 }
