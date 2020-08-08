@@ -245,81 +245,15 @@ Below I will present my preference for the kinds of applications presented in th
 
 ### Static Website
 
-{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.static time="time" %}
+{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.static %}
 
 ### Dynamic Website
 
-#### Backend
-
-<dl>
-{% for column in page.stacks.dynamic.backend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.dynamic.backend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Frontend
-
-<dl>
-{% for column in page.stacks.dynamic.frontend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.dynamic.frontend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Infrastructure
-
-<dl>
-{% for column in page.stacks.dynamic.infrastructure %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
+{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.dynamic %}
 
 ### Micro Service/Frontend
 
-#### Backend
-
-<dl>
-{% for column in page.stacks.microService.backend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.microService.backend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Frontend
-
-<dl>
-{% for column in page.stacks.microService.frontend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.microService.frontend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Infrastructure
-
-<dl>
-{% for column in page.stacks.microService.infrastructure %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
+{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.microService %}
 
 TODO: Explain commonalities and differences
 
