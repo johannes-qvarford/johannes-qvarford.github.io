@@ -2,12 +2,7 @@
 layout: post
 title: Tech Stack
 date: '2020-07-21'
-style: tech-stack
-test:
-    test1: 'hello'
-
-backendColumns:
-
+style: generic
 stacks:
     static:
         backend:
@@ -250,40 +245,7 @@ Below I will present my preference for the kinds of applications presented in th
 
 ### Static Website
 
-#### Backend
-
-<dl>
-{% for column in page.stacks.static.backend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.static.backend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Frontend
-
-<dl>
-{% for column in page.stacks.static.frontend.implementation %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-{% for column in page.stacks.static.frontend.testing %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
-
-#### Infrastructure
-
-<dl>
-{% for column in page.stacks.static.infrastructure %}
-    <dt>{{ column[0] }}</dt>
-    <dd>{{ column[1] }}</dd>
-{% endfor %}
-</dl>
+{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.static time="time" %}
 
 ### Dynamic Website
 
@@ -358,10 +320,6 @@ Below I will present my preference for the kinds of applications presented in th
     <dd>{{ column[1] }}</dd>
 {% endfor %}
 </dl>
-
-TODO: Present dynamic website stack
-
-TODO: Present micro service stack
 
 TODO: Explain commonalities and differences
 
