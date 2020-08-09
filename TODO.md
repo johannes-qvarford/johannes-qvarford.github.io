@@ -21,7 +21,6 @@ My personal website.
 
 ### In Progress
 
-  - Write post about Tech Stack.  
 
 ### Done ✓
 
@@ -33,4 +32,5 @@ My personal website.
   - Write post about SMW hacking.  
   - Write post about Winter Dreams.  
 - Use the original date of old articles  
+  - Write post about Tech Stack.  
 
