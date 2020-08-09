@@ -29,8 +29,8 @@ My personal website.
 - Write a post index.  
 - Friendlier home page  
 - Add CSS Cache busting.  
-  - Write post about SMW hacking.  
-  - Write post about Winter Dreams.  
+- Write post about SMW hacking.  
+- Write post about Winter Dreams.  
+- Write post about Tech Stack.  
 - Use the original date of old articles  
-  - Write post about Tech Stack.  
 
