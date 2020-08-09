@@ -326,6 +326,18 @@ Gradle was preferred over Maven because of the speed of development and the abil
 
 Typescript was chosen over Javascript because it makes it easier for humans and tools to understand the design of the code. It requires more setup which isn't always necessary for a small app. It remains to be seen if Kotlin for Javascript will be worth using in the future.
 
+### Database
+
+Postgres was chosen for data storage for its' extensibility.
+It can store normalized relational data as well as documents effectively, while providing a very powerful query language.
+Its' ability to define custom data types reduces the relational-object mismatch somewhat.
+Having explicit schemas makes it easier to make assertions about what data inconsistencies cannot exist, reduces the chance of introducing them, and doesn't require complicated migration scripts for semantically simple schema changes, such as column renaming.
+
+Different databases might be preferred depending on the kind of data that it needs to store.
+ACID-compliant databases are great because they offer you the opportunity to start with transactions and then move towards more complicated application-controlled optimistic locking if required for performance reasons.
+
+Caching is completely different. It should be performed as close to the client as possible. Redis is a good choice in a lot of cases.
+
 ### Version Control
 
 I liked Mercurial quite a lot a few years ago, but it has been losing too much market share to Git at this point.
