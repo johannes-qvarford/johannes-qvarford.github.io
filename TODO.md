@@ -38,4 +38,5 @@ My personal website.
 - Write post about Winter Dreams.  
 - Write post about Tech Stack.  
 - Use the original date of old articles  
+- Remove tech stack include post from listing  
 

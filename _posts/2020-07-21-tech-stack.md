@@ -246,15 +246,15 @@ Below I will present my stack preferences for the kinds of applications presente
 
 ### Static Website
 
-{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.static %}
+{% include 2020-07-21-tech-stack/stack.md stack=page.stacks.static %}
 
 ### Dynamic Website
 
-{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.dynamic %}
+{% include 2020-07-21-tech-stack/stack.md stack=page.stacks.dynamic %}
 
 ### Micro Service/Frontend
 
-{% include_relative 2020-07-21-tech-stack/stack.md stack=page.stacks.microService %}
+{% include 2020-07-21-tech-stack/stack.md stack=page.stacks.microService %}
 
 ## Reasoning
 
