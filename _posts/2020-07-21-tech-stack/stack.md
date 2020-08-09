@@ -1,7 +1,7 @@
 #### Backend
 
 <dl>
-{% for column in include.stack.implementation %}
+{% for column in include.stack.backend.implementation %}
     <dt>{{ column[0] }}</dt>
     <dd>{{ column[1] }}</dd>
 {% endfor %}

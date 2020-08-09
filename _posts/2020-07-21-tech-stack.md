@@ -80,7 +80,7 @@ stacks:
                 "Test Coverage": jest
                 "Tests as Documentation": None
                 "Mocking": jest
-                "Integration Testing": msw, testing-library/react
+                "Integration Testing": msw, 'testing-library/react'
         infrastructure:
             "End2End Testing": Cypress
             "Version Control System": Git
@@ -95,14 +95,14 @@ stacks:
                 "Database": Postgres
                 "Framework Libraries": Quarkus
                 "Database Libraries": JooQ, Flyway
-                "Api Libraries": OpenApi Generator (JAX-RS server stub, MicroProfile/Rest-easy client)
+                "Api Libraries": OpenApi Generator (JAX-RS server stub, MicroProfile+Rest-easy client)
                 "Other Libraries": MapStruct
                 "Build Tools": Gradle
                 "Conformance": Klint+detekt
             testing:
                 "Test Runner": JUnit5     
                 "Test Coverage": Jacoco
-                "Tests as Documentation": OpenApi spec/Pact
+                "Tests as Documentation": OpenApi spec+Pact
                 "Mocking": Mockito
                 "Integration Testing": Rest-Assured+TestContainers+Pact
         frontend:
@@ -122,7 +122,7 @@ stacks:
                 "Test Coverage": jest
                 "Tests as Documentation": None
                 "Mocking": jest
-                "Integration Testing": msw, testing-library/react
+                "Integration Testing": msw, 'testing-library/react'
 
         infrastructure:
             "End2End Testing": Selenide
@@ -158,18 +158,18 @@ Deployment has to be automated to achieve this.
 
 You should be able to structure the code so that it's easy to change business logic without changing the infrastructure. And you should be able to satisfy the stakeholder that requested the change without having to change
 at lot of code that might affect other stakeholders.
-You should be able to structure code with low coupling and high cohesion, so that the area to change is easy to find.
+You should be able to structure code with low coupling and high cohesion, so that the area to change is easy to change and easy find.
 
 This means that frameworks that enforce a certain file structure and causes unnecessary coupling between business logic and infrastructure are undesirable.
-Some frameworks provide conventions that can be overridden. This can mean that long-lasting projects becomes less convenient to work with (because scaffolding tools don't understand your conventions) and the conventions are less familiar to people who are experienced with the framework. Both short-term and long-term project convenience is considered, but long-term convenience is preferred as it provide a more stable development cycle.
+Some frameworks provide conventions that can be overridden. This means that long-lasting projects may become less convenient to work with over time (because scaffolding tools don't understand your conventions) and the conventions are less familiar to people who are experienced with the framework. Both short-term and long-term project convenience is considered, but long-term convenience is preferred as it provide a more stable development cycle.
 
 The programming language should provide suitable abstractions that can be used to remove much of the semantic code duplication.
-Such languages usually give inspiration to libraries that cover some of the utility functionality that you would've had to write yourself otherwise.
+Such languages usually give inspiration to libraries that cover some of the utility functionality that you would've had to write yourself otherwise, saving maintenance time and effort.
 
 #### Lead Time for Change
 
 The most important thing to improve this metric is to have fully automated regression tests.
-The time it takes to write regression tests more than make up for it in how fast and reliable they are execute compared to manual tests that has to run for every deployment.
+The time it takes to write regression tests more than make up for it in how fast and reliable they are execute compared to manual tests that has to be performed for every deployment.
 
 End-to-end tests are a must, but each test can take a long time to execute, and some scenarios are hard to replicate.
 A test pyramid should be used, with many more unit tests than end-to-end tests, with integration tests being somewhere in the middle.
@@ -177,7 +177,7 @@ A tech stack should allow for unit and integration tests, and be flexible enough
 
 #### Mean-Time to Recovery
 
-The Tech stack should allow for detection of problems quickly and allow you to rollback a deployment.
+The tech stack should allow for detection of problems quickly and allow you to rollback a deployment.
 
 #### Change-Failure Rate
 
@@ -186,9 +186,9 @@ It's important that business requirements can be easily translated to tests with
 
 ### Familiarity vs Freedom
 
-Certain Tech Stacks have very strong conventions and language limitations.
+Certain tech stacks have very strong conventions and language limitations.
 
-This is useful when it comes to hiring people, since it gives rise to more shared knowledge that doesn't have to be learned by people that are already familiar with the tech stack.
+This is useful when it comes to hiring, since it gives rise to more shared knowledge that doesn't have to be learned by people that are already familiar with the tech stack.
 It also makes it hard for rogue employees to write complex code that becomes more difficult to maintain once that person leaves the organization.
 
 The degree of familiarity vs freedom in a tech stack can often be traced back to the programming language culture. The culture influences what libraries gets written, how big they become, the granularity of the options they offer, how many alternatives gets written, and how much competition there is among the alternatives.
@@ -202,10 +202,10 @@ In order to develop an application, you probably want more than just a compiler.
 You want a good debugger, build tools and libraries, with good documentation, how-to guides and tutorials.
 You want to be able to find information about these things quickly and not get side-tracked by outdated and irrelevant information.
 
-A young tech stack with a lot of hype behind it will not have a problem with outdated information, since there isn't a lot of old information. At the same time, everything is this kind of ecosystem is unstable, and may change frequently or significantly. It can take time and effort to keep up with the pace while dodging bugs that are naturally introduced when there are a lot of changes in the tools and libraries.
+A young tech stack with a lot of hype behind it will not have a problem with outdated information, since there isn't a lot of old information to begin with. At the same time, most things in this kind of ecosystem is unstable, and may change frequently or significantly. It can take time and effort to keep up with the pace while dodging bugs that are bound to be introduced when there are a lot of changes in the tools and libraries.
 
-If a tech stack is older, then hopefully it will keep some of the hype up.
-Otherwise, it can be hard to convince new programmers to use the stack, and modern, useful ideas might not be integrated into the language, at least not at a fast pace.
+As a tech stack gets older, it will hopefully keep some of the hype up.
+Otherwise, it can be hard to convince new programmers to use the stack. Some modern, useful ideas might not be integrated into the language, at least not at a fast pace.
 
 No tech stack will keep its' hype once it becomes mature, but I feel like these stacks are the most trustworthy to bet on if they keep some of the hype.
 
@@ -213,8 +213,8 @@ No tech stack will keep its' hype once it becomes mature, but I feel like these 
 
 It's a plus if a tech stack works on the 3 major operating systems: Windows, OS X and Linux.
 
-It's a must that it works on Linux at least, in case Linux contains will be used to deploy the application, which has become increasingly common.
-Linux servers are also cheaper to build/rent, and more customizable than Windows servers as well.
+It's a must that it works on Linux at least, in case Linux containers will be used to deploy the application, which has become increasingly common.
+Linux servers are also cheaper to build/rent, easier to modify, and more customizable than Windows servers.
 
 
 ## Kinds of applications
@@ -242,7 +242,7 @@ It's important to be able to quickly create new ones, and avoid duplicating api 
 
 ## Stacks
 
-Below I will present my preference for the kinds of applications presented in this article.
+Below I will present my stack preferences for the kinds of applications presented in this article.
 
 ### Static Website
 
@@ -266,8 +266,7 @@ You're at least going to want to reduce the repetition of the common head and bo
 at which point you might as well generate the website.
 Using a dynamic webserver to serve static content just complicates things and makes hosting more expensive.
 
-Jekyll is among the better static site generators for how predictable and extensible it is.
-
+Jekyll is among the better static site generators for how easy-to-use and extensible it is.
 It's also the static website generator of choice for GitHub Pages, which is a plus.
 
 ### Dynamic Website
@@ -282,8 +281,6 @@ In my experience, it has been easier to integrate tool support for JSX rather th
 
 Jest was chosen for testing because it's opinionated when it comes to mocking.
 
-The chosen stack is modern and the frontend is opinionated. It's easy to get lost in a sea of choices and configuration in the Node ecosystem if you don't offload some of it.
-
 Gatsby.js was chosen over Next.js and Nuxt.js partially for its' greater accessibility features.
 Blitz.js was considered since it's a fullstack framework that reduces friction between frontend and backend.
 However, it's a very young framework that I don't think is ready for production use.
@@ -293,7 +290,7 @@ However, it's a very young framework that I don't think is ready for production 
 
 #### Why not Node?
 
-There are a number of for jumping of the fullstack Javascript bandwagon.
+There are a number of reasons for jumping of the fullstack Javascript bandwagon.
 
 First, I think the JVM ecosystem is better for backend development than Node.
 
@@ -303,7 +300,7 @@ There is less friction in build tools: Maven and Gradle are the only serious opt
 
 There is less friction in testing tools: JUnit dominates.
 
-It's easy to switch between languages without losing access to a lot of the ecosystem.
+It's easy to switch language without having to add separate plugins for bundling, execution and testing.
 
 The JVM ecosystem has stood the test of time, and shortcomings are being addressed at a fast rate.
 It will soon be hard to argue that Java is outdated.
@@ -313,15 +310,17 @@ A website can start of with the Dynamic Website stack when small, and once it re
 #### Why everything else?
 
 Java is absorbing useful features from other languages at an increasing rate.
-Why bet on Kotlin instead of Java?
-Kotlin was chosen over Java because it's similar enough while providing enough development productivity gains to offset the potential rewrite to Java in the future.
-There are tools for converting between the two, tests prevent accidental regressions and small libraries / micro services / micro fragments prevent the need for a big rewrite.
+Java recently gained records and text blocks, and will eventually get value types and lightweight threads, making coroutines not as important in some scenarios. Given all this, why would you bet on Kotlin instead of Java?
 
-Quarkus was chosen over Spring Boot for the same reason. Spring Boot is currently not as easy to Google since there is a lot of old guides that don't use current best practices, which Spring Framework keeps backwards-compatibility for. It's also the case that Spring Boot uses runtime Dependency Injection and can't be statically compiled through GraalVM yet. This might change in the future, but for now, Quarkus shows no sign of slowing down.
+Kotlin was chosen over Java because it's similar enough while providing enough development productivity gains to offset the potential rewrite to Java in the future.
+There are tools for converting between the two, tests prevent accidental regressions, and small libraries / micro services / micro fragments prevent the need for a big rewrite.
+
+Quarkus was chosen over Spring Boot for the same reason. Spring Boot is currently not as easy to Google since there is a lot of old guides that don't use current best practices, which Spring Framework keeps backwards-compatibility for. It's also the case that Spring Boot uses runtime Dependency Injection and can't be statically compiled through GraalVM yet. You don't always value startup time over long-term runtime performance, but when you do, it's nice to have the option.
+This might change in the future, but for now, Quarkus shows no sign of slowing down.
 
 Gradle was preferred over Maven because of the speed of development and the ability to solve complicated build setups that are hard with Maven. Gradle requires a lot of care so that it doesn't become too hard to maintain though.
 
-Typescript was chosen over Javascript because it makes it easier for humans and tools to understand the design of the code. It requires more setup which isn't always necessary for a small app.
+Typescript was chosen over Javascript because it makes it easier for humans and tools to understand the design of the code. It requires more setup which isn't always necessary for a small app. It remains to be seen if Kotlin for Javascript will be worth using in the future.
 
 ### Version Control
 
@@ -343,4 +342,11 @@ Heroku gives off the impression that you might be stuck due to lack of flexibili
 Digital Ocean doesn't offer SaaS hosting.
 
 
-## TODO: Summary
+## Summary
+
+As websites get more complicated, my preferences steer from Ruby static site rendering, to fullstack Node to frontend Node+backend JVM.
+It's important to use the right tool for the right job, and have a migration plan if the requirements change in such a way that a new tool is preferred. Use tools that work well together to produce small iterations and the productivity will come to you.
+
+If Ruby on Rails did not peter out during the last 10 years, I might've included it in one of the stacks.
+Will Node and JVM still be useful and popular choices in the next 10 years?
+It remains to be seen which trends will continue, and what new trends will appear.
