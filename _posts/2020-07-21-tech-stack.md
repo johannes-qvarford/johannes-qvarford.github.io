@@ -94,9 +94,9 @@ stacks:
                 "Language": Kotlin
                 "Database": Postgres
                 "Framework Libraries": Quarkus
-                "Database Libraries": JooQ, Flyway
+                "Database Libraries": JooQ, Liquibase
                 "Api Libraries": OpenApi Generator (JAX-RS server stub, MicroProfile+Rest-easy client)
-                "Other Libraries": MapStruct
+                "Other Libraries": MapStruct, Immutables
                 "Build Tools": Gradle
                 "Conformance": Klint+detekt
             testing:
@@ -317,6 +317,10 @@ There are tools for converting between the two, tests prevent accidental regress
 
 Quarkus was chosen over Spring Boot for the same reason. Spring Boot is currently not as easy to Google since there is a lot of old guides that don't use current best practices, which Spring Framework keeps backwards-compatibility for. It's also the case that Spring Boot uses runtime Dependency Injection and can't be statically compiled through GraalVM yet. You don't always value startup time over long-term runtime performance, but when you do, it's nice to have the option.
 This might change in the future, but for now, Quarkus shows no sign of slowing down.
+
+Liquibase was chosen over Flyway because it has more features without requiring a lot more configuration.
+
+The reason I prefer JooQ over JDBI is that they both allow you to write SQL, but JooQ offers more options while reducing the amount of POJOs you'll have to write by hand. Hibernate was also rejected because the object-relational mismatch solution it tries to provide does not make up for the increase in complexity. With Hibernate, there is a risk that you get stuck debugging for hours trying to perform some conceptually simple data modeling problem, which can make certain increments inexplicably take a lot of time. The much more simple abstraction provided by JooQ does not present the same risk.
 
 Gradle was preferred over Maven because of the speed of development and the ability to solve complicated build setups that are hard with Maven. Gradle requires a lot of care so that it doesn't become too hard to maintain though.
 
