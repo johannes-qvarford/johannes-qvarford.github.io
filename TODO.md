@@ -16,7 +16,6 @@ My personal website.
   - Write post about Legacy Code.  
   - Write post about Independent Teams.  
   - Write post about Vision with Autonomy.  
-  - Write post about Tech Stack.  
   - Write post about Career Site.  
   - Write post about Accessibility.  
 - Write reviews  
@@ -35,7 +34,8 @@ My personal website.
 - Write a post index.  
 - Friendlier home page  
 - Add CSS Cache busting.  
-  - Write post about SMW hacking.  
-  - Write post about Winter Dreams.  
+- Write post about SMW hacking.  
+- Write post about Winter Dreams.  
+- Write post about Tech Stack.  
 - Use the original date of old articles  
 
