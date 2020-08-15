@@ -22,9 +22,7 @@ My personal website.
   - Write review for Domain-Driven Design  
   - Write review for Working Effectively with Legacy Code  
   - Write review for Extreme Programming Explained  
-- Write descriptive alt-text  
 - Automate verify document structure  
-- Update link text to be read independantly.  
 - Dark mode  
 - Don't use abbreviations in dates  
 - Remove redundant title text in blog post list  
@@ -49,4 +47,6 @@ My personal website.
 - Use the original date of old articles  
 - Remove tech stack include post from listing  
   - Write post about Lunch Lady Simulator.  
+- Write descriptive alt-text  
+- Update link text to be read independantly.  
 

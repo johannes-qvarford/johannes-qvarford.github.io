@@ -6,7 +6,7 @@ style: lunch-lady-simulator
 ---
 
 <div class="title-images">
-    <img src="/assets/lunch-lady-simulator-512px.jpg?v={{site.time | date: '%s'}}" alt="A muscular, angry lunch lady strikes an action pose. She is carrying a ladle, has her hair tied in a bonnet and is wearing an apron. The background consists of a whirl of tomato sauce and fire." title="Lunch Lady Simulator promotional image" />
+    <img src="/assets/lunch-lady-simulator-512px.jpg?v={{site.time | date: '%s'}}" alt="An angry lunch lady strikes an action pose. Tomato sauce and fire swirl in the background." title="Lunch Lady Simulator promotional image" />
 </div>
 
 ## Project Summary

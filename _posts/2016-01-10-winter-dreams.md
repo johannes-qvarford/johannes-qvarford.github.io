@@ -6,7 +6,7 @@ style: winter-dreams
 ---
 
 <div class="title-images">
-    <img src="/assets/winter-dreams.jpg?v={{site.time | date: '%s'}}" alt="Title screen of Winter Dreams" />
+    <img src="/assets/winter-dreams.jpg?v={{site.time | date: '%s'}}" title="Title screen of the game - Winter Dreams" alt="A natively dressed women stares into the distance. The dark landscape is covered in snow and ice.  " />
 </div>
 
 ## Project Summary
@@ -21,7 +21,7 @@ style: winter-dreams
 
 Winter Dreams is a game about a winter princess that gets trapped in her dreams, and has to escape by solving puzzles.
 The game uses an isomorphic camera, and includes features such as
-voiced dialogue with subtitles, cutscenes, shader lighting, dynamic footprints and ukontrøll support.
+voiced dialogue with subtitles, cutscenes, shader lighting, dynamic footprints and Ukontrøll support.
 It supports dynamic loading of levels, settings and entity type properties without recompilation.
 
 A demo of the game was released in April 2013, and the source code for the demo can be found [here](https://github.com/johannes-qvarford/Winter-Dreams).
@@ -41,11 +41,11 @@ The game had many different entity types, so in order to handle the complexity o
 I created the so called Entity Registration System (ERS). The ERS tied every entity type to a name, and
 a function for converting a serialized entity to an in-memory entity. When a serialized entity was found, its name was used to
 lookup the correct conversion function and create the entity. So called Entity Registrations were used to register the entity type
-at startup. By declaring a global Entity Registration with a name and a function, the entity type was registred as soon as the game started.
+at startup. By declaring a global Entity Registration with a name and a function, the entity type was registered as soon as the game started.
 It's debateable if using global variables like this was a good idea; it sped up compilation time, as there was no need for a big
 registration function that grew every time a new entity type was added, but at the same time it made the control flow less intuitive.
 
-Compilation took a very long time on our school computers, and changing a single entity property's default value could result in a tripple digit compilation time in seconds.
+Compilation took a very long time on our school computers, and changing a single entity property's default value could result in a triple digit compilation time in seconds.
 To speed up development, entity property default values and general settings were moved out of the source files, and into configuration files that
 were loaded when the game started. We still had to reload the game, which started to take longer and longer towards the end of the project,
 so it might've been fitting to continuously check for changes in the configuration files, and reload them as necessary during runtime.
@@ -95,7 +95,7 @@ In a corporate project he would probably have been let go for not contributing e
 ## Summary
 
 While it wasn't always easy, we managed to crank out a good demo with interesting features.
-I learned a lot about how to effectivly work in a group and how to use a lot of programming libraries.
+I learned a lot about how to effectively work in a group and how to use a lot of programming libraries.
 I liked being a programming lead a lot, and I really enjoyed planning the project and overseeing the programmers' work, making sure they finished their tasks on time. Still, I sometimes struggled as a leader, and this project taught me more than anything, not to do half-measures.
 I shouldn't have given tasks to the unmotivated programmer for the sake of giving tasks,
 I should have consulted with the teachers, to at best be given a solution, and at worst be given input.

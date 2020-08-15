@@ -7,12 +7,21 @@
         "Mockito",
         "Postgres",
         "Quarkus",
+        "Qvarford",
+        "SNES",
+        "Skövde",
         "Struct",
+        "Ukontrøll",
+        "Waluigi's",
+        "ZSNES",
+        "cutscenes",
         "detekt",
+        "kaizo",
         "micros_ervice",
         "playthrough",
         "stylelint",
         "templating",
+        "waluigis",
         "youtuber"
     ]
 }
