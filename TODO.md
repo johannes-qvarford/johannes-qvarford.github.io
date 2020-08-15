@@ -8,7 +8,6 @@ My personal website.
 - Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
-  - Write post about Lunch Lady Simulator.  
   - Write post about Case Based Reasoning.  
   - Write post about Tiny Tricky Tiles.  
   - Write post about Financial Administration Module.  
@@ -49,4 +48,5 @@ My personal website.
 - Write post about Tech Stack.  
 - Use the original date of old articles  
 - Remove tech stack include post from listing  
+  - Write post about Lunch Lady Simulator.  
 
