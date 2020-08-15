@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "Deedly",
+        "FMOD",
         "Jacoco",
         "Klint",
         "Mockito",
@@ -8,7 +10,9 @@
         "Struct",
         "detekt",
         "micros_ervice",
+        "playthrough",
         "stylelint",
-        "templating"
+        "templating",
+        "youtuber"
     ]
 }
