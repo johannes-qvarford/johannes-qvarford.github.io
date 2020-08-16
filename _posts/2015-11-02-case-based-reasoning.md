@@ -6,7 +6,7 @@ style: generic
 ---
 
 
-## Abstract
+### Abstract
 
 Chess is a game that is often used to examine different techniques in AI.
 In this thesis, the following question is asked:
@@ -24,7 +24,7 @@ The whole <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:his:diva-11049">thesi
     <div class="project-summary-group">Institution: HiS</div>
 </div>
 
-## Programming Experience
+### Programming Experience
 
 This project was very interesting to work with because it gave me a chance to program in a more functional style than I've previously been used to.
 Immutable Classes were written, and their public interfaces were severely restricted to the bare minimum, which made it harder to write bug ridden code.

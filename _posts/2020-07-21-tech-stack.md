@@ -133,7 +133,7 @@ stacks:
             "Deployment Platform": Azure (ARM Template)
 ---
 
-## Introduction
+### Introduction
 
 Historically, I haven't considered the idea of deciding on a tech stack.
 This is mostly due to the fact that I've worked in a lot of different environments that I didn't get the time to settle in with.
@@ -144,14 +144,14 @@ I've come to love XP, and I want to be able to deliver value quickly, to appreci
 The article will cover the attributes that I value in my tech stacks, and a list of stacks that I prefer for different kinds of products.
 I'm a web developer, first and foremost, so I will not talk about stacks for embedded real-time systems or desktop applications e.g.
 
-## What makes a good tech stack?
+### What makes a good tech stack?
 
-### Metrics
+#### Metrics
 
 I will go through the 4 key metrics from the [Accelerate](https://itrevolution.com/book/accelerate/) book
 and bring up tech stack attributes that that I believe can improve them.
 
-#### Deployment Frequency
+##### Deployment Frequency
 
 There is little point in being able deploy frequently if the tech stack makes it hard or impossible to do.
 Deployment has to be automated to achieve this.
@@ -166,7 +166,7 @@ Some frameworks provide conventions that can be overridden. This means that long
 The programming language should provide suitable abstractions that can be used to remove much of the semantic code duplication.
 Such languages usually give inspiration to libraries that cover some of the utility functionality that you would've had to write yourself otherwise, saving maintenance time and effort.
 
-#### Lead Time for Change
+##### Lead Time for Change
 
 The most important thing to improve this metric is to have fully automated regression tests.
 The time it takes to write regression tests more than make up for it in how fast and reliable they are execute compared to manual tests that has to be performed for every deployment.
@@ -175,16 +175,16 @@ End-to-end tests are a must, but each test can take a long time to execute, and 
 A test pyramid should be used, with many more unit tests than end-to-end tests, with integration tests being somewhere in the middle.
 A tech stack should allow for unit and integration tests, and be flexible enough that you can test on many different levels of the pyramid based on the needs of the product.
 
-#### Mean-Time to Recovery
+##### Mean-Time to Recovery
 
 The tech stack should allow for detection of problems quickly and allow you to rollback a deployment.
 
-#### Change-Failure Rate
+##### Change-Failure Rate
 
 It should be hard to introduce a regression, which should've been caught by the tests.
 It's important that business requirements can be easily translated to tests with minimum risk conversion errors.
 
-### Familiarity vs Freedom
+#### Familiarity vs Freedom
 
 Certain tech stacks have very strong conventions and language limitations.
 
@@ -195,7 +195,7 @@ The degree of familiarity vs freedom in a tech stack can often be traced back to
 
 I appreciate familiarity over freedom for the most part. A product should have the ability to grow and be refactored over time, which requires a degree of freedom. It's also important that familiarity doesn't gives rise to semantic duplication just to keep the amount of language features down.
 
-### Ecosystem
+#### Ecosystem
 
 In order to develop an application, you probably want more than just a compiler.
 
@@ -209,7 +209,7 @@ Otherwise, it can be hard to convince new programmers to use the stack. Some mod
 
 No tech stack will keep its' hype once it becomes mature, but I feel like these stacks are the most trustworthy to bet on if they keep some of the hype.
 
-### Development Environment
+#### Development Environment
 
 It's a plus if a tech stack works on the 3 major operating systems: Windows, OS X and Linux.
 
@@ -217,22 +217,22 @@ It's a must that it works on Linux at least, in case Linux containers will be us
 Linux servers are also cheaper to build/rent, easier to modify, and more customizable than Windows servers.
 
 
-## Kinds of applications
+### Kinds of applications
 
-### Static Website
+#### Static Website
 
 This is a website that doesn't serve dynamic content -  i.e. no "backend" is needed.
 
 Easier to reason about, good for blogs, and cheap to host.
 
-### Dynamic Website
+#### Dynamic Website
 
 A website that can serve dynamic content.
 
 May eventually become very large. It's important to refactor these websites over time so they can be divided into
 libraries, micro frontends and/or micro services if desirable.
 
-### Micro Service/Frontend
+#### Micro Service/Frontend
 
 A part of a greater application that fulfills some domain-specific purpose.
 
@@ -240,25 +240,25 @@ Micro services and frontends are usually not alone, or at least not for long.
 It's important to be able to quickly create new ones, and avoid duplicating api contract details between client and server.
 
 
-## Stacks
+### Stacks
 
 Below I will present my stack preferences for the kinds of applications presented in this article.
 
-### Static Website
+#### Static Website
 
 {% include 2020-07-21-tech-stack/stack.md stack=page.stacks.static %}
 
-### Dynamic Website
+#### Dynamic Website
 
 {% include 2020-07-21-tech-stack/stack.md stack=page.stacks.dynamic %}
 
-### Micro Service/Frontend
+#### Micro Service/Frontend
 
 {% include 2020-07-21-tech-stack/stack.md stack=page.stacks.microService %}
 
-## Reasoning
+### Reasoning
 
-### Static Website
+#### Static Website
 
 When it comes to building a simple website, there is almost no reason to use pure HTML/CSS/JS.
 
@@ -269,7 +269,7 @@ Using a dynamic webserver to serve static content just complicates things and ma
 Jekyll is among the better static site generators for how easy-to-use and extensible it is.
 It's also the static website generator of choice for GitHub Pages, which is a plus.
 
-### Dynamic Website
+#### Dynamic Website
 
 If you need to support user accounts and forms, then Jekyll will not be enough.
 
@@ -286,9 +286,9 @@ Blitz.js was considered since it's a fullstack framework that reduces friction b
 However, it's a very young framework that I don't think is ready for production use.
 
 
-### Micro Service/Frontend
+#### Micro Service/Frontend
 
-#### Why not Node?
+##### Why not Node?
 
 There are a number of reasons for jumping of the fullstack Javascript bandwagon.
 
@@ -307,7 +307,7 @@ It will soon be hard to argue that Java is outdated.
 
 A website can start of with the Dynamic Website stack when small, and once it reaches a certain complexity it can be divided into micro services one at a time until the original website is just a shell that can easily be replaced.
 
-#### Why everything else?
+##### Why everything else?
 
 Java is absorbing useful features from other languages at an increasing rate.
 Java recently gained records and text blocks, and will eventually get value types and lightweight threads, making coroutines not as important in some scenarios. Given all this, why would you bet on Kotlin instead of Java?
@@ -326,7 +326,7 @@ Gradle was preferred over Maven because of the speed of development and the abil
 
 Typescript was chosen over Javascript because it makes it easier for humans and tools to understand the design of the code. It requires more setup which isn't always necessary for a small app. It remains to be seen if Kotlin for Javascript will be worth using in the future.
 
-### Database
+#### Database
 
 Postgres was chosen for data storage for its' extensibility.
 It can store normalized relational data as well as documents effectively, while providing a very powerful query language.
@@ -338,7 +338,7 @@ ACID-compliant databases are great because they offer you the opportunity to sta
 
 Caching is completely different. It should be performed as close to the client as possible. Redis is a good choice in a lot of cases.
 
-### Version Control
+#### Version Control
 
 I liked Mercurial quite a lot a few years ago, but it has been losing too much market share to Git at this point.
 
@@ -347,7 +347,7 @@ They are about on par when it comes to desired features though.
 
 GitLab is probably preferred if you need self-hosting.
 
-### Hosting
+#### Hosting
 
 If you need anything beyond static website hosting, then I prefer Azure over AWS and GCS.
 AWS felt very unintuitive to use. 
@@ -358,7 +358,7 @@ Heroku gives off the impression that you might be stuck due to lack of flexibili
 Digital Ocean doesn't offer SaaS hosting.
 
 
-## Summary
+### Summary
 
 As websites get more complicated, my preferences steer from Ruby static site rendering, to fullstack Node to frontend Node+backend JVM.
 It's important to use the right tool for the right job, and have a migration plan if the requirements change in such a way that a new tool is preferred. Use tools that work well together to produce small iterations and the productivity will come to you.

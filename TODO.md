@@ -28,7 +28,6 @@ My personal website.
 - Include document language  
 - Use higher contrast background in nav  
 - Follow w3 validator suggestions  
-- Fix outline according to HTML outliner  
 
 ### In Progress
 
@@ -49,4 +48,5 @@ My personal website.
   - Write post about Case Based Reasoning.  
 - Write descriptive alt-text  
 - Update link text to be read independantly.  
+- Fix outline according to HTML outliner  
 

@@ -9,7 +9,7 @@ style: lunch-lady-simulator
     <img src="/assets/lunch-lady-simulator-512px.jpg?v={{site.time | date: '%s'}}" alt="An angry lunch lady strikes an action pose. Tomato sauce and fire swirl in the background." title="Lunch Lady Simulator promotional image" />
 </div>
 
-## Project Summary
+### Project Summary
 
 <div class="project-summary">
     <div class="project-summary-language">Language: C#</div>
@@ -17,7 +17,7 @@ style: lunch-lady-simulator
     <div class="project-summary-group">Institution: HiS</div>
 </div>
 
-## Introduction
+### Introduction
 
 Lunch Lady Simulator is a comical physics based simulator about being a lunch lady.
 The goal of the game is to serve as many customers as possible while struggling with
@@ -36,7 +36,7 @@ This project was a bit of a struggle, and I had to share the role of lead progra
 As a lead, I had to organize the other programmers and communicate with the other leads.
 I was also the person responsible for handling input, arm physics and soup physics.
 
-## As a programmer
+### As a programmer
 
 I was assigned to develop the main physical parts of the game. We were using Unity, which took care of a lot of the work,
 and allowed me to try out different strategies from a higher abstraction level. While it may normally have been good
@@ -54,7 +54,7 @@ the control scheme, and then check the key was down (on the keyboard) or the tri
 Given how well known and common this issue with Unity is, there was probably an asset available on the Asset Store that could've
 helped us, but we ran on a 0 SEK budget without salary, and it wouldn't be fair to the other teams to gain such an advantage through monetary means.
 
-## As a lead
+### As a lead
 
 In the beginning of the project, I had high hopes. I was able to assign big tasks to the other programmers, and it looked like everyone
 would be occupied for a while. I was unfortunately wrong about that, and quickly discovered that the programmer who was supposed
@@ -74,7 +74,7 @@ task, and that we wouldn't have finished on time with a good result, if one of t
 I probably shouldn't have put soo much weight on my shoulders and just accepted that I couldn't put the well-being of the project
 over my own.
 
-## Summary
+### Summary
 
 Despite bumps on the road, the project was finished on time and drew a big audience which really enjoyed it, particularly the co-op mode.
 I learned a lot about the features and limitations of Unity, as well as many game physics concepts and applications.

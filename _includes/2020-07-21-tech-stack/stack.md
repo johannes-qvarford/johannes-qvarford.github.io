@@ -1,4 +1,4 @@
-#### Backend
+##### Backend
 
 <dl>
 {% for column in include.stack.backend.implementation %}
@@ -11,7 +11,7 @@
 {% endfor %}
 </dl>
 
-#### Frontend
+##### Frontend
 
 <dl>
 {% for column in include.stack.frontend.implementation %}
@@ -24,7 +24,7 @@
 {% endfor %}
 </dl>
 
-#### Infrastructure
+##### Infrastructure
 
 <dl>
 {% for column in include.stack.infrastructure %}

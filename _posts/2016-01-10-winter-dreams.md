@@ -9,7 +9,7 @@ style: winter-dreams
     <img src="/assets/winter-dreams.jpg?v={{site.time | date: '%s'}}" title="Title screen of the game - Winter Dreams" alt="A natively dressed women stares into the distance. The dark landscape is covered in snow and ice.  " />
 </div>
 
-## Project Summary
+### Project Summary
 
 <div class="project-summary">
     <div class="project-summary-language">Language: C++</div>
@@ -17,7 +17,7 @@ style: winter-dreams
     <div class="project-summary-group">Institution: HiS</div>
 </div>
 
-## Introduction
+### Introduction
 
 Winter Dreams is a game about a winter princess that gets trapped in her dreams, and has to escape by solving puzzles.
 The game uses an isomorphic camera, and includes features such as
@@ -30,7 +30,7 @@ A trailer for the demo was also released [here](https://www.youtube.com/watch?v=
 This was my first big collaborative project at the University of Skövde, and also my first major role as a lead programmer.
 It was my responsibility to organize the other programmers, communicate between us and the other leads, as well as programming a large part of the game.
 
-## As a Programmer
+### As a Programmer
 
 I was in charge of the level loading system, which was eventually expanded for loading settings and entity type properties.
 We used Tiled to design levels, because it was the first best editor we could find that supported isomorphic 2D levels.
@@ -62,7 +62,7 @@ across the level, and one surrounding the player. The radius and brightness of t
 the player healed themselves and decreased as they took damage. The effect was implemented by using a pixelation shader,
 and darkening pixels based on their distances to the light sources.
 
-## As a Lead
+### As a Lead
 
 I had been programming in high school, so at this point I had much more programming experience than the others.
 As such, I felt that I had to teach the team how best to structure the code, documentation and handle version control.
@@ -92,7 +92,7 @@ I should've maybe talked with him and the teachers to get more input for what th
 It's also very different to make this decision in a school project, as opposed to a corporate one.
 In a corporate project he would probably have been let go for not contributing enough, but the point of the school project was not to 100% simulate a corporate project.
 
-## Summary
+### Summary
 
 While it wasn't always easy, we managed to crank out a good demo with interesting features.
 I learned a lot about how to effectively work in a group and how to use a lot of programming libraries.
