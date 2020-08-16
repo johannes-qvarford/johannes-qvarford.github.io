@@ -8,7 +8,6 @@ My personal website.
 - Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
-  - Write post about Case Based Reasoning.  
   - Write post about Tiny Tricky Tiles.  
   - Write post about Financial Administration Module.  
   - Write post about Solutions System.  
@@ -47,6 +46,7 @@ My personal website.
 - Use the original date of old articles  
 - Remove tech stack include post from listing  
   - Write post about Lunch Lady Simulator.  
+  - Write post about Case Based Reasoning.  
 - Write descriptive alt-text  
 - Update link text to be read independantly.  
 

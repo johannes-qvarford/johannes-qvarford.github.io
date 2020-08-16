@@ -5,6 +5,7 @@
         "Jacoco",
         "Klint",
         "Mockito",
+        "PLINQ",
         "Postgres",
         "Quarkus",
         "Qvarford",
