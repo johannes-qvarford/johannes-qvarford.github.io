@@ -3,7 +3,7 @@ My personal website.
 
 ### To Do
 
-- Create site map.  
+- Create site map?  
 - Better 404 page.  
 - Better README.md.  
 - Nav-bar next to content on wide screens  
@@ -21,13 +21,16 @@ My personal website.
   - Write review for Domain-Driven Design  
   - Write review for Working Effectively with Legacy Code  
   - Write review for Extreme Programming Explained  
-- Automate verify document structure  
 - Dark mode  
 - Don't use abbreviations in dates  
 - Remove redundant title text in blog post list  
 - Include document language  
 - Use higher contrast background in nav  
-- Follow w3 validator suggestions  
+- Automate running w3 validator.  
+- Automate generating HTML outlines.  
+- Exclude files for site build.  
+- Generate sitemap.xml  
+- Add breadcrumbs?  
 
 ### In Progress
 
@@ -49,4 +52,5 @@ My personal website.
 - Write descriptive alt-text  
 - Update link text to be read independantly.  
 - Fix outline according to HTML outliner  
+- Follow w3 validator suggestions  
 

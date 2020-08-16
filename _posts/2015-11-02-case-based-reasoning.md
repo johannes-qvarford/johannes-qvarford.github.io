@@ -1,6 +1,7 @@
 ---
 title: A Case-Based Reasoning Approach to A Chess AI Using Shallow Similarity
 date: 2015-11-02
+last_modified_at: 2020-08-16
 layout: post
 style: generic
 ---

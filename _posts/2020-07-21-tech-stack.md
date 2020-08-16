@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Tech Stack
-date: '2020-07-21'
+date: 2020-07-21
+last_modified_at: 2020-08-16
 style: generic
 stacks:
     static:
@@ -148,8 +149,7 @@ I'm a web developer, first and foremost, so I will not talk about stacks for emb
 
 #### Metrics
 
-I will go through the 4 key metrics from the [Accelerate](https://itrevolution.com/book/accelerate/) book
-and bring up tech stack attributes that that I believe can improve them.
+I will go through the 4 key metrics from the [Accelerate book](https://itrevolution.com/book/accelerate/) and bring up tech stack attributes that that I believe can improve them.
 
 ##### Deployment Frequency
 
