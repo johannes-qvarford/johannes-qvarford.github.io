@@ -1,9 +1,13 @@
 # Personal Website
 My personal website.
 
+### Ideas
+
+- Add breadcrumbs  
+- Create site map  
+
 ### To Do
 
-- Create site map?  
 - Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
@@ -28,7 +32,6 @@ My personal website.
 - Automate generating HTML outlines.  
 - Exclude files for site build.  
 - Generate sitemap.xml  
-- Add breadcrumbs?  
 - Unify styling for 1 image blog posts  
 
 ### In Progress
