@@ -7,7 +7,6 @@ My personal website.
 - Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
-  - Write post about Tiny Tricky Tiles.  
   - Write post about Financial Administration Module.  
   - Write post about Solutions System.  
   - Write post about Legacy Code.  
@@ -30,6 +29,7 @@ My personal website.
 - Exclude files for site build.  
 - Generate sitemap.xml  
 - Add breadcrumbs?  
+- Unify styling for 1 image blog posts  
 
 ### In Progress
 
@@ -53,4 +53,5 @@ My personal website.
 - Fix outline according to HTML outliner  
 - Follow w3 validator suggestions  
 - Better 404 page.  
+  - Write post about Tiny Tricky Tiles.  
 
