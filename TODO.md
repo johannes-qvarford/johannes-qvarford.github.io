@@ -8,7 +8,6 @@ My personal website.
 
 ### To Do
 
-- Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
   - Write post about Financial Administration Module.  
@@ -57,4 +56,5 @@ My personal website.
 - Follow w3 validator suggestions  
 - Better 404 page.  
   - Write post about Tiny Tricky Tiles.  
+- Better README.md.  
 
