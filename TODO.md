@@ -4,7 +4,6 @@ My personal website.
 ### To Do
 
 - Create site map?  
-- Better 404 page.  
 - Better README.md.  
 - Nav-bar next to content on wide screens  
 - Write posts  
@@ -53,4 +52,5 @@ My personal website.
 - Update link text to be read independantly.  
 - Fix outline according to HTML outliner  
 - Follow w3 validator suggestions  
+- Better 404 page.  
 
