@@ -8,7 +8,6 @@ My personal website.
 
 ### To Do
 
-- Nav-bar next to content on wide screens  
 - Write posts  
   - Write post about Solutions System.  
   - Write post about Legacy Code.  
@@ -57,4 +56,5 @@ My personal website.
   - Write post about Tiny Tricky Tiles.  
 - Better README.md.  
   - Write post about Financial Administration Module.  
+- Nav-bar next to content on wide screens  
 
