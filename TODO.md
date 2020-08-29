@@ -10,7 +10,6 @@ My personal website.
 
 - Nav-bar next to content on wide screens  
 - Write posts  
-  - Write post about Financial Administration Module.  
   - Write post about Solutions System.  
   - Write post about Legacy Code.  
   - Write post about Independent Teams.  
@@ -57,4 +56,5 @@ My personal website.
 - Better 404 page.  
   - Write post about Tiny Tricky Tiles.  
 - Better README.md.  
+  - Write post about Financial Administration Module.  
 

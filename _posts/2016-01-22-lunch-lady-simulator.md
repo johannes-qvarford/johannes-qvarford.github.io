@@ -2,7 +2,7 @@
 layout: post
 title: "Lunch Lady Simulator"
 date: 2016-01-22
-last_modified_at: 2020-08-16
+last_modified_at: 2020-08-29
 style: lunch-lady-simulator
 ---
 
@@ -57,23 +57,20 @@ helped us, but we ran on a 0 SEK budget without salary, and it wouldn't be fair 
 
 ### As a lead
 
-In the beginning of the project, I had high hopes. I was able to assign big tasks to the other programmers, and it looked like everyone
-would be occupied for a while. I was unfortunately wrong about that, and quickly discovered that the programmer who was supposed
-to do water physics, was unable too, partly because of limitations in Unity and performance constraints.
-Meanwhile, I was too occupied with the physics implementation to manage the team and while we all developed out parts of the game,
-we had not merged our work by week 4. That's when another programmer stepped in to take charge of the programmers, and he took over as a lead
-for the time being.
+In the beginning of the project, I had high hopes. I was able to assign big tasks to the other programmers, and it looked like everyone would be occupied for a while.
+I was unfortunately wrong about that, and quickly discovered that the programmer who was supposed to do water physics, was unable too, partly because of limitations in Unity and performance constraints.
+Meanwhile, I was too occupied with the physics implementation to manage the team and while we all developed out parts of the game, we had not merged our work by week 4.
+That's when another programmer stepped in to take charge of the programmers, and he took over as a lead for the time being.
 
 Later in the project, he was often away implementing the Kinect support (the dev kits were in a different building) so I had to take over for him.
 By the end of the project, I was fully back in action as the lead programmer, even though it wasn't explicitly stated before the end of the project.
 
 To be honest, I was really stressed out during the project. I had just joined Deedly Games, and was working there on my spare time.
 Since I worked on the project for 40 hours a week and worked at Deedly Games for 20 hours a week, I did not have a single free day
-to relax. I probably shouldn't have handled the physics as well as taking on a lead role, as the physics consumed too much of my time,
-which should've gone to managing the other programmers. I just felt at the time that the physics was the hardest and most time consuming
-task, and that we wouldn't have finished on time with a good result, if one of the other programmers handled it.
-I probably shouldn't have put soo much weight on my shoulders and just accepted that I couldn't put the well-being of the project
-over my own.
+to relax.
+I probably shouldn't have handled the physics as well as taking on a lead role, as the physics consumed too much of my time, which should've gone to managing the other programmers.
+I just felt at the time that the physics was the hardest and most time consuming task, and that we wouldn't have finished on time with a good result, if one of the other programmers handled it.
+I probably shouldn't have put soo much weight on my shoulders and just accepted that I couldn't put the well-being of the project over my own.
 
 ### Summary
 
