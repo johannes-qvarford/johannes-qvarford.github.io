@@ -23,7 +23,6 @@ My personal website.
 - Don't use abbreviations in dates  
 - Remove redundant title text in blog post list  
 - Include document language  
-- Use higher contrast background in nav  
 - Automate running w3 validator.  
 - Automate generating HTML outlines.  
 - Exclude files for site build.  
@@ -57,4 +56,5 @@ My personal website.
   - Write post about Financial Administration Module.  
 - Nav-bar next to content on wide screens  
   - Write post about Solutions System.  
+- Use higher contrast background in nav  
 

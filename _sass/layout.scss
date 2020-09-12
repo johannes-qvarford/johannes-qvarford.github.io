@@ -8,6 +8,8 @@ $side-nav-width: 400px;
 body { background: lightgray }
 
 body {
+  background-color: black;
+  color: white;
   margin: 0;
   display: grid;
   min-height: 100vh;
@@ -19,22 +21,26 @@ body {
     "footer";
 }
 
+body a {
+  color: #8080FF;
+  text-decoration: unset;
+}
+
+body a:visited {
+  color: #ba73be;
+}
+
 header {
   grid-area: header;
   text-align: center;
   align-self: center;
 }
 
-main {
-  grid-area: main;
-}
-
 nav {
   grid-area: nav;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: darkgray;
+  justify-content: space-between; 
   text-align: center;
 }
 
@@ -44,7 +50,7 @@ nav > a {
 }
 
 nav > a + a {
-  border-left: solid 1px black;
+  border-left: solid 1px white;
 }
 
 nav > a:last-child {
@@ -61,8 +67,19 @@ footer {
 }
 
 main {
+  grid-area: main;
   background: white;
+  color: black;
   padding: 16px;
+}
+
+main a {
+  text-decoration: underline;
+  color: #0000FF;
+}
+
+main a:visited {
+  color: #690d6d;
 }
 
 article {
@@ -76,6 +93,16 @@ article {
 
 .self-picture {
   float: right;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 1024px) {
