@@ -9,7 +9,6 @@ My personal website.
 ### To Do
 
 - Write posts  
-  - Write post about Solutions System.  
   - Write post about Legacy Code.  
   - Write post about Independent Teams.  
   - Write post about Vision with Autonomy.  
@@ -57,4 +56,5 @@ My personal website.
 - Better README.md.  
   - Write post about Financial Administration Module.  
 - Nav-bar next to content on wide screens  
+  - Write post about Solutions System.  
 
