@@ -10,7 +10,6 @@ My personal website.
 
 - Write posts  
   - Write post about Legacy Code.  
-  - Write post about Independent Teams.  
   - Write post about Vision with Autonomy.  
   - Write post about Career Site.  
   - Write post about Accessibility.  
@@ -57,4 +56,5 @@ My personal website.
 - Nav-bar next to content on wide screens  
   - Write post about Solutions System.  
 - Use higher contrast background in nav  
+  - Write post about Independent Teams.  
 
