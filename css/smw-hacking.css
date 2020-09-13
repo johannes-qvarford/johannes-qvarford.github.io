@@ -1,0 +1,13 @@
+.title-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.title-images img {
+  margin: 16px;
+  max-width: 250px; }
+
+@media (max-width: 300px) {
+  .title-images img {
+    max-width: 90%; } }

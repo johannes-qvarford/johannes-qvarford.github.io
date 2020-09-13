@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Case-Based Reasoning Approach to A Chess AI Using Shallow Similarity - Johannes Qvarford's career site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layout.css?v=1599988555" />
+    
+      <link rel="stylesheet" href="/css/generic.css?v=1599988555" />
+    
+  </head>
+  <body>
+    <header><h1>Johannes Qvarford's career site</h1></header>
+    <main><article>
+  <h2>A Case-Based Reasoning Approach to A Chess AI Using Shallow Similarity</h2>
+  <p class="meta">
+    Written on 2015-11-02
+  </p>
+  <h3 id="abstract">Abstract</h3>
+
+<p>Chess is a game that is often used to examine different techniques in AI.
+In this thesis, the following question is asked:
+“Is it possible to develop an AI-agent whose decision making is based on the technique Case-based Reasoning (CBR) that uses shallow similarity, and plays better using case bases based on the better players?”.
+An AI-agent has been developed that has played a number of games against itself using different case bases based on different players.
+After examining the results, it turned out that the AI-agent plays so bad that it almost never manages to win regardless of case base, 
+which meant that it was not possible to grade them based on skill.
+It’s could still be useful to examine if a CBR-based chess playing AI-agent could play chess with great skill.</p>
+
+<p>The whole <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:his:diva-11049">thesis report</a> is available for download.</p>
+
+<div class="project-summary">
+    <div class="project-summary-language">Language: C#</div>
+    <div class="project-summary-period">Year: 2015</div>
+    <div class="project-summary-group">Institution: HiS</div>
+</div>
+
+<h3 id="programming-experience">Programming Experience</h3>
+
+<p>This project was very interesting to work with because it gave me a chance to program in a more functional style than I’ve previously been used to.
+Immutable Classes were written, and their public interfaces were severely restricted to the bare minimum, which made it harder to write bug ridden code.
+Almost everything chess related was unit tested, and I never even ran the program before all the tests passed.</p>
+
+<p>While this may have been working great in the beginning, I was soon faced with a performance problem, mostly related to unnecessary and expensive allocations of lists and boards.
+In order to fix the problem, I changed the representation and implementation of some classes without changing their public interfaces.
+This allowed me to test any changes I made, to make sure that I didn’t introduce a bug.</p>
+
+<p>So, in the end I introduced mutability in order to solve the problem.
+However, that doesn’t mean that it was a waste of time to program functionally at the start.</p>
+
+<ul>
+  <li>The immutability caused the class interfaces to shrink, which sped up the initial testing process.</li>
+  <li>Even if the initial implementation and representations where replaced, they were quick to develop, and led to clearer code.</li>
+  <li>Due to the non-existence of mutable state-sharing, it was easy to scale the program to simulate multiple chess games in parallel using PLINQ.</li>
+</ul>
+
+<p>This experience has lead me to develop in a more functional style, and writing more unit tests.
+Unfortunately, sometimes the pros aren’t worth it on short projects with rapidly changing requirements.
+It’s important to be pragmatic, and use the right tool for the right job.</p>
+
+</article></main>
+    <nav>
+        <h2 class="nocontent">Navigation</h2>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <!--<a href="/cv">CV</a>-->
+        <!--<a href="/about">About</a>-->
+    </nav>
+    <footer>
+        <a href="https://se.linkedin.com/in/johannes-qvarford-305905103">My LinkedIn</a>
+        <a href="https://github.com/johannes-qvarford">My Github</a>
+    </footer>
+  </body>
+</html>
