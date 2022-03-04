@@ -8,6 +8,12 @@ recommendations:
     review: |
       A good overview of how you can describe modules in terms of incoming/public/private dependencies, public abstraction and private implemantation.
       It argues that making the smallest possible modules isn't always desirable because then you increase complexity in the dependency graph between modules.
+  - name: All advice comes from a context
+    link: https://www.tedinski.com/2018/06/19/all-advice-has-context.html
+    review: |
+      Taking rules to their logical extremes seldom leads to good code.
+      The article brings up the problems with fads and how most advice doesn't apply 100% of the time.
+      The question remains on how to teach junior programmers this, since it can take a lot of time to internalize very loose rules.
 ---
 
 <article>
@@ -27,7 +33,7 @@ recommendations:
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Review</th>
+                <th>Description</th>
             </tr>
         </thead>
         {% for rec in page.recommendations %}
@@ -39,7 +45,7 @@ recommendations:
 
 <!--
   TODO:
-https://www.tedinski.com/2018/06/19/all-advice-has-context.html
+
 https://www.tedinski.com/2018/08/14/modularity.html
 https://www.tedinski.com/2018/08/28/using-data-to-mutate-state.html
 https://www.tedinski.com/2019/04/02/solid-critique.html
