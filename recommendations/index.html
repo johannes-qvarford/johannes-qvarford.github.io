@@ -85,6 +85,12 @@ recommendations:
       A book that really highlightes that to get the most from a programming languages you need to consider its' features as part of greater whole.
       Some features are useful more often than others, and some have even become obsolete over time.
       Some patterns aren't explicit language features, but should be treated as if they were.
+  - name: "Extreme Programming Explained: Embrace Change, Second Edition"
+    link: https://www.oreilly.com/library/view/extreme-programming-explained/0321278658/
+    review: |
+      This book gave me an insight into how it is to truly work iteratively, and what a great concept that is.
+      It helped me take one step at a time when coding, instead of attempting to make enourmous changes that were never really done and slow to test.
+      It also opened my eyes to why we write user stories, and how important users really are.
 ---
 <!--
   - name: T
@@ -92,39 +98,9 @@ recommendations:
     review: |
       T
 -->
-
-
-<article>
-    <h2>{{ page.title }}</h2>
-
-    <h3>Introduction</h3>
-
-    I really like programming, and everything surrounding programming.
-
-    I listen to youtube videos and read a lot of articles and books, and though that I could share those who have
-    affected me the most and in what way.
-
-
-    <h3>List</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        {% for rec in page.recommendations %}
-        {% include rec.md name=rec.name link=rec.link review=rec.review %}
-        {% endfor %}
-    </table>
-
-</article>
-
 <!--
   TODO:
 
-https://www.oreilly.com/library/view/extreme-programming-explained/0321278658/
 https://www.amazon.com/Large-Scale-Software-Design-John-Lakos/dp/0201633620
 https://jcip.net/
 https://www.poodr.com/
@@ -163,3 +139,31 @@ https://www.academia.edu/4330409/Object_oriented_programming_an_objective_sense_
 https://www.amazon.com/dp/B07LCM8RG2/
 https://www.amazon.com/Refactoring-Patterns-Joshua-Kerievsky/dp/0321213351
 -->
+
+<article>
+    <h2>{{ page.title }}</h2>
+
+    <h3>Introduction</h3>
+
+    I really like programming, and everything surrounding programming.
+
+    I listen to youtube videos and read a lot of articles and books, and though that I could share those who have
+    affected me the most and in what way.
+
+
+    <h3>List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        {% for rec in page.recommendations %}
+        {% include rec.md name=rec.name link=rec.link review=rec.review %}
+        {% endfor %}
+    </table>
+
+</article>
+
