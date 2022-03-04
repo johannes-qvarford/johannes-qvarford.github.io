@@ -8,6 +8,10 @@ My personal website.
 
 ### To Do
 
+- Write Recommendations
+  - Improve styling.
+  - Check spelling.
+  - Create sections.
 - Write posts  
   - Write post about Legacy Code.  
   - Write post about Vision with Autonomy.  
@@ -31,7 +35,8 @@ My personal website.
 
 
 ### Done ✓
-
+- Write Recommendations
+  - First draft
 - Write a test post.  
 - Write the main page.  
 - Write a post index.  
