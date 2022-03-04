@@ -2,28 +2,34 @@
 ---
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/layout.css?v={{site.time | date: '%s'}}" />
-    {% if page.style %}
-      <link rel="stylesheet" href="/css/{{ page.style }}.css?v={{site.time | date: '%s'}}" />
-    {% endif %}
-  </head>
-  <body>
-    <header><h1>{{ site.title }}</h1></header>
-    <main>{{ content }}</main>
-    <nav>
-        <h2 class="nocontent">Navigation</h2>
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <!--<a href="/cv">CV</a>-->
-        <!--<a href="/about">About</a>-->
-    </nav>
-    <footer>
-        <a href="https://se.linkedin.com/in/johannes-qvarford-305905103">My LinkedIn</a>
-        <a href="https://github.com/johannes-qvarford">My Github</a>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/layout.css?v={{site.time | date: '%s'}}" />
+  {% if page.style %}
+  <link rel="stylesheet" href="/css/{{ page.style }}.css?v={{site.time | date: '%s'}}" />
+  {% endif %}
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+  <main>{{ content }}</main>
+  <nav>
+    <h2 class="nocontent">Navigation</h2>
+    <a href="/">Home</a>
+    <a href="/blog">Blog</a>
+    <a href="/recommendations">Recommendations</a>
+    <!--<a href="/cv">CV</a>-->
+    <!--<a href="/about">About</a>-->
+  </nav>
+  <footer>
+    <a href="https://se.linkedin.com/in/johannes-qvarford-305905103">My LinkedIn</a>
+    <a href="https://github.com/johannes-qvarford">My Github</a>
+  </footer>
+</body>
+
 </html>

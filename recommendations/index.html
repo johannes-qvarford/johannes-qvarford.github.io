@@ -1,0 +1,88 @@
+---
+layout: default
+title: Johannes Qvarford's Recommendations
+last_modified_at: 2022-03-04
+recommendations:
+  - name: Breaking systems into modules
+    link: https://www.tedinski.com/2018/08/14/modularity.html
+    review: My review
+---
+
+<article>
+    <h2>{{ page.title }}</h2>
+
+    <h3>Introduction</h3>
+
+    I really like programming, and everything surrounding programming.
+
+    I listen to youtube videos and read a lot of articles and books, and though that I could share those who have
+    affected me the most and in what way.
+
+
+    <h3>List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        {% for rec in page.recommendations %}
+        {% include rec.md name=rec.name link=rec.link review=rec.review %}
+        {% endfor %}
+    </table>
+
+</article>
+
+<!--
+  TODO:
+https://www.tedinski.com/2018/06/19/all-advice-has-context.html
+https://www.tedinski.com/2018/08/14/modularity.html
+https://www.tedinski.com/2018/08/28/using-data-to-mutate-state.html
+https://www.tedinski.com/2019/04/02/solid-critique.html
+https://www.tedinski.com/2018/05/08/case-study-unix-philosophy.html
+https://www.tedinski.com/2018/02/27/the-expression-problem.html
+https://cpsc.yale.edu/epigrams-programming
+https://www.tedinski.com/2019/05/08/unexpected-moral-reasoning.html
+https://www.cs.oberlin.edu/~jwalker/langDesign/OO_vs_Fun/notes.html
+https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+https://www.tedinski.com/2019/03/19/testing-at-the-boundaries.html
+https://www.tedinski.com/2018/10/09/relationship-induction-and-tests.html
+https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
+https://www.tedinski.com/2018/12/05/types-as-design-tool.html
+
+https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/
+https://www.dddcommunity.org/book/evans_2003/
+https://www.oreilly.com/library/view/effective-java/9780134686097/
+https://www.oreilly.com/library/view/extreme-programming-explained/0321278658/
+https://www.amazon.com/Large-Scale-Software-Design-John-Lakos/dp/0201633620
+https://jcip.net/
+https://www.poodr.com/
+https://www.lua.org/pil/
+https://www.oreilly.com/library/view/the-art-of/9781449318482/
+https://www.oreilly.com/library/view/mythical-man-month-the/0201835959/
+https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
+https://sandimetz.com/99bottles
+
+https://www.youtube.com/watch?v=r8mtXJh3hzM
+https://www.youtube.com/watch?v=tMW08JkFrBA
+https://www.youtube.com/watch?v=r8mtXJh3hzM
+https://www.youtube.com/watch?v=VDfX44fZoMc
+https://www.youtube.com/watch?v=rX0ItVEVjHc
+https://www.youtube.com/watch?v=Gzj723LkRJY
+https://www.youtube.com/watch?v=lw6TaiXzHAE
+https://www.youtube.com/watch?v=QyJZzq0v7Z4
+https://www.youtube.com/watch?v=jlPaby7suOc
+https://www.youtube.com/watch?v=LhoLuui9gX8
+https://www.youtube.com/watch?v=nKyF8fzed0w
+https://www.youtube.com/watch?v=csyL9EC0S0c
+https://www.youtube.com/watch?v=lw6TaiXzHAE
+https://www.youtube.com/watch?v=QyJZzq0v7Z4
+https://www.youtube.com/watch?v=jlPaby7suOc
+https://www.youtube.com/watch?v=srQt1NAHYC0
+
+Extra (preserve):
+https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
+
+-->
