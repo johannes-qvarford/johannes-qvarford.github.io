@@ -47,6 +47,12 @@ recommendations:
     link: https://www.cs.oberlin.edu/~jwalker/langDesign/OO_vs_Fun/notes.html
     review: |
       Patterns and higher-order functions are two concepts used to describe the same underlying concept in functional programming and object-oriented programming.
+  - name: Parse, don't validate
+    link: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+    review: |
+      Bake assumptions into your types to make invalid programs impossible to express.
+      e.g. Rather than send a list around, and verifying that it contains at least one element as a pre-condition everwhere,
+      create a at-least-one element list, and use it everywhere that needs the pre-condition.
 ---
 <!--
   - name: 
