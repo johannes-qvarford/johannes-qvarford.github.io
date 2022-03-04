@@ -53,6 +53,11 @@ recommendations:
       Bake assumptions into your types to make invalid programs impossible to express.
       e.g. Rather than send a list around, and verifying that it contains at least one element as a pre-condition everwhere,
       create a at-least-one element list, and use it everywhere that needs the pre-condition.
+  - name: Testing at the boundaries
+    link: https://www.tedinski.com/2019/03/19/testing-at-the-boundaries.html
+    review: |
+      The article brings up that when unit testing, it doesn't usually make sense to test every class in complete isolation.
+      It is also critical of how the TDD concept has been warped over the years and that it started out as much more reasonable.
 ---
 <!--
   - name: 
@@ -91,9 +96,6 @@ review: |
 <!--
   TODO:
 
-
-https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
-https://www.tedinski.com/2019/03/19/testing-at-the-boundaries.html
 https://www.tedinski.com/2018/10/09/relationship-induction-and-tests.html
 https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
 https://www.tedinski.com/2018/12/05/types-as-design-tool.html
