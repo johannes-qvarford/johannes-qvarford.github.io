@@ -109,4 +109,4 @@ dist
 .bundle/
 vendor/
 .sass-cache
-_site
+_site/
