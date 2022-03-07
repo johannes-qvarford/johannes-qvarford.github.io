@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '16' ]
+    name: Node ${{ matrix.node }} sample
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build site
+        uses: docker://jekyll/jekyll
+        run: cd /github/workspace && jekyll build
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install libraries
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: Publish site
+        cd _site && git add --all && git commit

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[My website about my career as a software engineer and architect.](https://johannes-qvarford.github.io/)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tools/w3-validate.js"
   },
   "repository": {
     "type": "git",
