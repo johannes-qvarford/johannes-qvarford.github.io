@@ -9,7 +9,6 @@ My personal website.
 ### To Do
 
 - Write Recommendations  
-  - Check spelling.  
   - Create sections.  
 - Write posts  
   - Write post about Legacy Code.  
@@ -33,10 +32,11 @@ My personal website.
 
 ### In Progress
 
-  - Improve styling.  
 
 ### Done ✓
 
+  - Check spelling.  
+  - Improve styling.  
 - Write Recommendations  
   - First draft  
 - Write a test post.  
