@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "[My website about my career as a software engineer and architect.](https://johannes-qvarford.github.io/)",
   "scripts": {
-    "test": "node tools/w3-validate.js && node tools/validate-outlines.js"
+    "test": "node tools/w3-validate.js && node tools/validate-outlines.js",
+    "build": "npx parcel build --dist-dir _site/css _src/css/*.css",
+    "watch": "npx parcel watch --dist-dir _site/css _src/css/*.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
     "h5o": "^0.11.3",
     "html-validator": "^6.0.0",
     "jsdom": "^19.0.0",
+    "parcel": "^2.3.2",
     "rimraf": "^3.0.2"
   }
 }

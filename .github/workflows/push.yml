@@ -13,17 +13,20 @@ jobs:
     name: Node ${{ matrix.node }} sample
     steps:
       - uses: actions/checkout@v2
-      - name: Build site
-        run: |
-                docker run \
-                -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-                jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
       - name: Setup node
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
       - name: Install libraries
         run: npm install
+      # Needs to build site before site resources, because jekyll will overwrite them otherwise.
+      - name: Build site
+        run: |
+                docker run \
+                -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+                jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+      - name: Build site resources
+        run npm build
       - name: Run tests
         run: npm test
       - name: Deploy

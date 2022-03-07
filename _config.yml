@@ -49,6 +49,8 @@ exclude:
    - TODO.md
    - README.md
    - outlines/
+   - _outlines/
+   - .parcel-cache
 
 plugins:
   - jekyll-sitemap
