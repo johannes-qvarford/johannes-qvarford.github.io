@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[My website about my career as a software engineer and architect.](https://johannes-qvarford.github.io/)",
   "scripts": {
-    "test": "node tools/w3-validate.js"
+    "test": "node tools/w3-validate.js && node tools/validate-outlines.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,10 @@
   },
   "homepage": "https://github.com/johannes-qvarford/johannes-qvarford.github.io#readme",
   "devDependencies": {
-    "html-validator": "^6.0.0"
+    "dir-compare": "^4.0.0",
+    "h5o": "^0.11.3",
+    "html-validator": "^6.0.0",
+    "jsdom": "^19.0.0",
+    "rimraf": "^3.0.2"
   }
 }

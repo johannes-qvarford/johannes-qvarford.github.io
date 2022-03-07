@@ -8,19 +8,19 @@ My personal website.
 
 ### To Do
 
-- Automate generating HTML outlines.  
-- Exclude files for site build.  
 - Generate sitemap.xml  
 - Unify styling for 1 image blog posts  
-- Don't publish unnecessary files  
 - CV  
 
 ### In Progress
 
-- Automate running w3 validator.  
 
 ### Done ✓
 
+- Exclude files for site build.  
+- Automate generating HTML outlines.  
+- Don't publish unnecessary files  
+- Automate running w3 validator.  
 - Remove redundant title text in blog post list  
 - Include document language  
   - Check spelling.  

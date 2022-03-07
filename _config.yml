@@ -43,3 +43,12 @@ exclude:
    - Gemfile.lock
 #   - node_modules/
    - vendor/
+   - node_modules
+   - Article Writing Process.md
+   - package.json
+   - package-lock.json
+   - tools
+   - LICENSE
+   - TODO.md
+   - README.md
+   - outlines/

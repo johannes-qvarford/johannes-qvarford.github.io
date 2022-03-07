@@ -1,11 +1,12 @@
 const validator = require('html-validator')
 const { readFileSync } = require('fs')
 const glob = require('glob')
-const { exit } = require('process')
+const { exit } = require('process');
+const { runAsync } = require('./util');
 
 const paths = glob.sync("_site/**/*.html");
 
-(async () => {
+runAsync((async () => {
   let failure = false
   for (const path of paths) {
     try {
@@ -18,7 +19,7 @@ const paths = glob.sync("_site/**/*.html");
     console.log("One or more document errors were discovered!")
     exit(1)
   }
-})()
+}))
 
 async function validateFile(path) {
   const options = {
