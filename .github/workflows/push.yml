@@ -14,8 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build site
-        uses: docker://jekyll/jekyll
-        run: cd /github/workspace && jekyll build
+        run: |
+                docker run \
+                -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+                jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
       - name: Setup node
         uses: actions/setup-node@v2
         with:
@@ -24,5 +26,8 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm test
-      - name: Publish site
-        cd _site && git add --all && git commit
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: _site
