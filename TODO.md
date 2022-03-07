@@ -8,33 +8,21 @@ My personal website.
 
 ### To Do
 
-- Write Recommendations  
-  - Create sections.  
-- Write posts  
-  - Write post about Legacy Code.  
-  - Write post about Vision with Autonomy.  
-  - Write post about Career Site.  
-  - Write post about Accessibility.  
-- Write reviews  
-  - Write review for The Pragmatic Programmer  
-  - Write review for Domain-Driven Design  
-  - Write review for Working Effectively with Legacy Code  
-  - Write review for Extreme Programming Explained  
-- Dark mode  
-- Remove redundant title text in blog post list  
-- Include document language  
 - Automate running w3 validator.  
 - Automate generating HTML outlines.  
 - Exclude files for site build.  
 - Generate sitemap.xml  
 - Unify styling for 1 image blog posts  
-- Don't publish unneccesary files  
+- Don't publish unnecessary files  
+- CV  
 
 ### In Progress
 
 
 ### Done ✓
 
+- Remove redundant title text in blog post list  
+- Include document language  
   - Check spelling.  
   - Improve styling.  
 - Write Recommendations  
@@ -52,7 +40,7 @@ My personal website.
   - Write post about Lunch Lady Simulator.  
   - Write post about Case Based Reasoning.  
 - Write descriptive alt-text  
-- Update link text to be read independantly.  
+- Update link text to be read independently.  
 - Fix outline according to HTML outliner  
 - Follow w3 validator suggestions  
 - Better 404 page.  
