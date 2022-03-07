@@ -1,4 +1,5 @@
 ---
+layout: post
 date: 2017-11-25
 title: Bricknode Financial Module
 last_modified_at: 2020-08-29
