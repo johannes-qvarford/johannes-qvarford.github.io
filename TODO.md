@@ -8,10 +8,9 @@ My personal website.
 
 ### To Do
 
-- Write Recommendations
-  - Improve styling.
-  - Check spelling.
-  - Create sections.
+- Write Recommendations  
+  - Check spelling.  
+  - Create sections.  
 - Write posts  
   - Write post about Legacy Code.  
   - Write post about Vision with Autonomy.  
@@ -30,13 +29,16 @@ My personal website.
 - Exclude files for site build.  
 - Generate sitemap.xml  
 - Unify styling for 1 image blog posts  
+- Don't publish unneccesary files  
 
 ### In Progress
 
+  - Improve styling.  
 
 ### Done ✓
-- Write Recommendations
-  - First draft
+
+- Write Recommendations  
+  - First draft  
 - Write a test post.  
 - Write the main page.  
 - Write a post index.  
