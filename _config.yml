@@ -51,6 +51,7 @@ exclude:
    - outlines/
    - _outlines/
    - .parcel-cache
+   - johannes-qvarford.github.io
 
 plugins:
   - jekyll-sitemap

@@ -3,6 +3,11 @@
 cat >.git/hooks/pre-commit <<EOF
 #!/bin/bash
 echo Running tests...
+docker run --rm \
+  --volume="$PWD:/srv/jekyll" \
+  --publish 4000:4000 \
+  jekyll/jekyll \
+  jekyll build
 source ~/.nvm/nvm.sh
 nvm use
 npm test
