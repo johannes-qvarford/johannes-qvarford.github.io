@@ -24,7 +24,7 @@ description: >-
   Read about the experiences of Johannes Qvarford -
   developer and architect.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://johannes-qvarford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  johannes-qvarford
 
 # Exclude from processing.
@@ -36,12 +36,9 @@ github_username:  johannes-qvarford
 # their entries' file path in the `include:` list.
 #
 exclude:
-#   - .sass-cache/
    - .jekyll-cache/
-#   - gemfiles/
    - Gemfile
    - Gemfile.lock
-#   - node_modules/
    - vendor/
    - node_modules
    - Article Writing Process.md
@@ -52,3 +49,6 @@ exclude:
    - TODO.md
    - README.md
    - outlines/
+
+plugins:
+  - jekyll-sitemap
