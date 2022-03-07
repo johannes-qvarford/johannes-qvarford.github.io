@@ -8,7 +8,6 @@ My personal website.
 
 ### To Do
 
-- Automate running w3 validator.  
 - Automate generating HTML outlines.  
 - Exclude files for site build.  
 - Generate sitemap.xml  
@@ -18,6 +17,7 @@ My personal website.
 
 ### In Progress
 
+- Automate running w3 validator.  
 
 ### Done ✓
 
