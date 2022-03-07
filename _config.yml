@@ -52,3 +52,6 @@ exclude:
 
 plugins:
   - jekyll-sitemap
+
+sass:
+  sass_dir: _sass

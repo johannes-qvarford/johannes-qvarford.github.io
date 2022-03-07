@@ -3,20 +3,21 @@ My personal website.
 
 ### Ideas
 
+- "Rely on knowledge vs expect the unexpected" article  
 - Add breadcrumbs  
-- Create site map  
 
 ### To Do
 
-- Generate sitemap.xml  
-- Unify styling for 1 image blog posts  
 - CV  
 
 ### In Progress
 
+- Unify styling for 1 image blog posts  
 
 ### Done ✓
 
+- Create site map  
+- Generate sitemap.xml  
 - Exclude files for site build.  
 - Automate generating HTML outlines.  
 - Don't publish unnecessary files  
