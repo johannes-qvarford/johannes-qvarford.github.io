@@ -1,0 +1,11 @@
+.titleImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleImages img {
+    margin: 16px;
+    width: 90%;
+}

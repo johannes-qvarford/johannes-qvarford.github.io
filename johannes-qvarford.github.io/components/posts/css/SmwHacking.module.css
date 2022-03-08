@@ -1,0 +1,17 @@
+.titleImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleImages img {
+    margin: 16px;
+    max-width: 250px;
+}
+
+@media (max-width: 300px) {
+    .titleImages img {
+        max-width: 90%;
+    }
+}

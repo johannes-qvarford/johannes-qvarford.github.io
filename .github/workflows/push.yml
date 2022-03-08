@@ -18,19 +18,13 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install libraries
-        run: npm install
-      # Needs to build site before site resources, because jekyll will overwrite them otherwise.
+        run: cd johannes-qvarford.github.io && npm install
       - name: Build site
-        run: |
-                docker run \
-                -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-                jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-      - name: Build site resources
-        run npm build
+        run: cd johannes-qvarford.github.io && npm run build
       - name: Run tests
-        run: npm test
+        run: cd johannes-qvarford.github.io && npm test
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: _site
+          folder: johannes-qvarford.github.io/out

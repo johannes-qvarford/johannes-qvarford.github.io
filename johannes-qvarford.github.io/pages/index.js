@@ -1,14 +1,11 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Image from "../components/Image"
-import styles from '../styles/Home.module.css'
+import Layout from "../components/Layout"
 
 export default function Home() {
   return <Layout pageTitle="Home">
     <article>
       <h2>Welcome!</h2>
 
-      <img className="self-picture" src="/assets/me.jpg" alt="A picture of this site's author: Johannes Qvarford." />
+      <img className="self-picture" src="/assets/me.jpg" alt="A picture of this site&apos;s author: Johannes Qvarford." />
 
       <p>
         My name is Johannes Qvarford and I&apos;m a software developer/architect.

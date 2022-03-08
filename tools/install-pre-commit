@@ -2,14 +2,16 @@
 
 cat >.git/hooks/pre-commit <<EOF
 #!/bin/bash
-echo Running tests...
-docker run --rm \
-  --volume="$PWD:/srv/jekyll" \
-  --publish 4000:4000 \
-  jekyll/jekyll \
-  jekyll build
+echo Use nvm...
 source ~/.nvm/nvm.sh
-nvm use
-npm test
+nvm use || exit 1
+
+cd johannes-qvarford.github.io
+echo Install...
+npm install || exit 1
+echo Test...
+npm test || exit 1
+echo Build...
+npm run build || exit 1
 EOF
 chmod 755 .git/hooks/pre-commit

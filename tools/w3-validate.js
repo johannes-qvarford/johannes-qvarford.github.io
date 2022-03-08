@@ -27,8 +27,15 @@ async function validateFile(path) {
     data: readFileSync(path, 'utf8')
   }
 
-  const result = await validator(options)
-  console.log(path, result)
+  let result = null
+  try {
+    result = await validator(options)
+    console.log(path, result)
+  } catch (error) {
+    console.log(error)
+    return
+  }
+
   if (result.startsWith("Error")) {
     throw new Error(result)
   }
