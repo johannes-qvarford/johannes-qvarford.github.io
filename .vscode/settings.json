@@ -26,6 +26,7 @@
         "Mockito",
         "msbuild",
         "nocontent",
+        "nojekyll",
         "nuget",
         "Nuxt",
         "OOPSLA",

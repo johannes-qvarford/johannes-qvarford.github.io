@@ -16,6 +16,7 @@ My personal website.
 
 ### Done ✓
 
+- Convert project to Next.js
 - Create site map  
 - Generate sitemap.xml  
 - Exclude files for site build.  

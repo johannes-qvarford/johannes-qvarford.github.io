@@ -4,7 +4,7 @@ const { outlines } = require("./outlines");
 const { compareSync } = require("dir-compare")
 const rimraf = require("rimraf")
 
-const paths = glob.sync("_site/**/*.html");
+const paths = glob.sync("out/**/*.html");
 
 runAsync(async () => {
     await outlines(paths, "_outlines")

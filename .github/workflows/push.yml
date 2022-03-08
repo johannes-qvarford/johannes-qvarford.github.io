@@ -18,13 +18,15 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install libraries
-        run: cd johannes-qvarford.github.io && npm install
+        run: npm install
       - name: Build site
-        run: cd johannes-qvarford.github.io && npm run build
+        run: npm run build
       - name: Run tests
-        run: cd johannes-qvarford.github.io && npm test
+        run: npm test
+      - name: Mark as non-Jekyll Project
+        run: touch out/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: johannes-qvarford.github.io/out
+          folder: out

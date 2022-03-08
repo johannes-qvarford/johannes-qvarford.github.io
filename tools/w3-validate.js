@@ -4,7 +4,7 @@ const glob = require('glob')
 const { exit } = require('process');
 const { runAsync } = require('./util');
 
-const paths = glob.sync("_site/**/*.html");
+const paths = glob.sync("out/**/*.html");
 
 runAsync((async () => {
   let failure = false

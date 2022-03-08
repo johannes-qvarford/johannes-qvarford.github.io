@@ -6,7 +6,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta charSet="utf-8" />
       </Head>
       <body>
         <header>

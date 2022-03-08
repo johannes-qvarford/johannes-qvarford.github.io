@@ -18,7 +18,7 @@ async function outlines(paths, subDirectory) {
 }
 
 function inputToOutputPath(input, subDirectory) {
-    return input.replaceAll("_site", subDirectory)
+    return input.replaceAll("out", subDirectory)
 }
 
 module.exports.outlines = outlines
