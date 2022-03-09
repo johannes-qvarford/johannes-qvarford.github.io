@@ -64,6 +64,11 @@ const recs = [
     "review": "Functions with a high-level of generality can sometimes make the implementation hard to write incorrectly,\nsince an incorrect implementation would have to make assumptions that weren't part of the signature.\n"
   },
   {
+    "name": "Refactoring: Improving the Design of Existing Code",
+    "link": "https://martinfowler.com/books/refactoring.html",
+    "review": "A good reference for how, why and when to do refactoring."
+  },
+  {
     "name": "Designing Data-Intensive Applications",
     "link": "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/",
     "review": "This book goes over a lot of different alternatives to storing and managing data, and discussing their trade-offs in large systems with high performance requirements.\n"
