@@ -9,14 +9,16 @@ My personal website.
 ### To Do
 
 - CV  
+- What to teach junior developers?  
 
 ### In Progress
 
-- Unify styling for 1 image blog posts  
 
 ### Done ✓
 
-- Convert project to Next.js
+- Improve layout  
+- Unify styling for 1 image blog posts  
+- Convert project to Next.js  
 - Create site map  
 - Generate sitemap.xml  
 - Exclude files for site build.  

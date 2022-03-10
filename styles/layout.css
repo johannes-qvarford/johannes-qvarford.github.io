@@ -78,6 +78,13 @@
     max-width: 600px;
     margin: auto;
   }
+
+  /* It looks weird on wide monitors if the left-aligned text is inside a small centered block. */
+  @media (min-width: 1468px) {
+    article {
+      margin-left: 100px
+    }
+  }
   
   .nocontent {
     display: none;
