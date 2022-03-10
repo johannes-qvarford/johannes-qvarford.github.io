@@ -4,11 +4,12 @@
   "description": "[My website about my career as a software engineer and architect.](https://johannes-qvarford.github.io/)",
   "private": "true",
   "scripts": {
-    "test": "node tools/w3-validate.js && node tools/validate-outlines.js",
+    "test": "node tools/validate-outlines.js",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-outlines": "node tools/generate-outlines.js"
   },
   "repository": {
     "type": "git",

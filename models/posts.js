@@ -7,6 +7,7 @@ import BricknodeFinancialModule from "../components/posts/BricknodeFinancialModu
 import SolutionsSystem from "../components/posts/SolutionsSystem"
 import TechStack from "../components/posts/TechStack"
 import IndependentTeams from "../components/posts/IndependentTeams"
+import GoodArchitect from "../components/posts/GoodArchitect"
 
 function getPosts() {
     return [
@@ -18,7 +19,8 @@ function getPosts() {
         BricknodeFinancialModule,
         SolutionsSystem,
         TechStack,
-        IndependentTeams
+        IndependentTeams,
+        GoodArchitect,
     ]
 }
 
