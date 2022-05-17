@@ -3,6 +3,7 @@ import Recommendation from "../components/Recommendation"
 import styles from "./recommendations.module.css"
 
 const recs = [
+  // Articles
   {
     "name": "Breaking systems into modules",
     "link": "https://www.tedinski.com/2018/08/14/modularity.html",
@@ -64,6 +65,23 @@ const recs = [
     "review": "Functions with a high-level of generality can sometimes make the implementation hard to write incorrectly,\nsince an incorrect implementation would have to make assumptions that weren't part of the signature.\n"
   },
   {
+    "name": "Scaling the Practice of Architecture, Conversationally",
+    "link": "https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+    "review": "It's important to involve the people who will be affected by a decision, in the decision making process. They have more context on their own problem, and may be able to solve it without involving others."
+  },
+  {
+    "name": "Pin and suffering",
+    "link": "https://fasterthanli.me/articles/pin-and-suffering",
+    "review": "Rust's safety guarantees together with its' support for low-level memory management can lead to some complexity when data needs to live for the lifecycle of an asyncronous task. It's fascinating how rust approaches the problem using its' type system."
+  },
+  {
+    "name": "Subclassing in Python Redux",
+    "link": "https://hynek.me/articles/python-subclassing-redux/",
+    "review": "The article compares and contrasts inheritance and composition, and favors composition in most scenarios. An interesting though is how composition makes the relationships of objects and their properties more explicit, since many languages implement inheritance by essentially letting classes share a namespace."
+  },
+
+  // Books
+  {
     "name": "Refactoring: Improving the Design of Existing Code",
     "link": "https://martinfowler.com/books/refactoring.html",
     "review": "A good reference for how, why and when to do refactoring."
@@ -123,6 +141,8 @@ const recs = [
     "link": "https://sandimetz.com/99bottles",
     "review": "A great book focused around teaching object-oriented design, how it relates to TDD, and how it's better to duplicate code than use the wrong abstraction.\n"
   },
+
+  // Videos
   {
     "name": "Working Effectively with Legacy Code",
     "link": "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052",
@@ -187,6 +207,11 @@ const recs = [
     "name": "Functional Design Patterns",
     "link": "https://www.youtube.com/watch?v=srQt1NAHYC0",
     "review": "A very good presentation about functional programming concepts targeted towards programmers who know object-oriented programming.\n"
+  },
+  {
+    "name": "I'm in ur address space",
+    "link": "https://invidious.privacy.qvarford.net/watch?v=xN5WjaeeklA",
+    "review": "A fun look at using Rust to modify running processes on Windows to run custom code."
   }
 ]
 
