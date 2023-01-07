@@ -18,7 +18,7 @@ export default function Document() {
           <h2 className="nocontent">Navigation</h2>
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/recommendations">Recommendations</Link>
+          <Link href="https://dokuwiki.privacy.qvarford.net">Personal Wiki</Link>
         </nav>
         <footer>
           <Link href="https://se.linkedin.com/in/johannes-qvarford-305905103">My LinkedIn</Link>

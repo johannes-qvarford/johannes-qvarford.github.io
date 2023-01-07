@@ -3,6 +3,7 @@
   --header-height: 30px;
   --top-nav-height: 30px;
   --footer-height: 50px;
+  --border-thickness: 2px;
 }
 
 body {
@@ -14,11 +15,11 @@ body {
   color: white;
 
   margin: auto;
-  border: 2px solid;
+  border: var(--border-thickness) solid;
   border-radius: 8px;
   
   display: grid;
-  min-height: 100vh;
+  min-height: calc(100vh - var(--border-thickness) * 2);
   max-width: 1000px;
 
   grid-template-columns: 100%;

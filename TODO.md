@@ -4,12 +4,11 @@ My personal website.
 ### Ideas
 
 - "Rely on knowledge vs expect the unexpected" article  
-- Add breadcrumbs  
+- Add breadcrumbs
 
 ### To Do
 
-- CV  
-- What to teach junior developers?  
+- CV
 
 ### In Progress
 
