@@ -4,6 +4,6 @@
 
 # Local Deployment
 
-Just run `./serve.sh` to build and deploy the site locally.
+Just run `npm run dev` to build and deploy the site locally.
 
-You should now be able to visit the site at http://localhost:4000.
+You should now be able to visit the site at http://localhost:3000.
