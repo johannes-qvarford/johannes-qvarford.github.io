@@ -26,7 +26,7 @@
     "h5o": "^0.11.3",
     "html-validator": "^6.0.0",
     "jsdom": "^19.0.0",
-    "parcel": "^2.3.2",
+    "parcel": "^2.8.3",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "minimist": "1.2.6"
