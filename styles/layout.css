@@ -2,7 +2,7 @@
   --big-font-size: 32px;
   --header-height: 30px;
   --top-nav-height: 30px;
-  --footer-height: 50px;
+  --footer-height: 70px;
   --border-thickness: 2px;
 }
 
@@ -101,7 +101,7 @@ h1 {
   :root {
     --header-height: 40px;
     --top-nav-height: 40px;
-    --footer-height: 70px;
+    --footer-height: 90px;
   }
 
   h1 {
@@ -117,7 +117,7 @@ h1 {
   :root {
     --header-height: 60px;
     --top-nav-height: 60px;
-    --footer-height: 90px;
+    --footer-height: 120px;
   }
 
   h1 {

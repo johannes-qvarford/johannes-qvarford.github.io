@@ -21,6 +21,7 @@ export default function Document() {
           <Link href="https://dokuwiki.privacy.qvarford.net">Personal Wiki</Link>
         </nav>
         <footer>
+          <Link href="/assets/cv.pdf">CV</Link>
           <Link href="https://se.linkedin.com/in/johannes-qvarford-305905103">My LinkedIn</Link>
           <Link href="https://github.com/johannes-qvarford">My Github</Link>
         </footer>
